@@ -1,0 +1,84 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="#" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="" class="center sliding white translation-init " data-i18n="suggestions.title"></div>
+       
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through" >
+    <div data-page="suggestions" class="page">
+        <div style="overflow-y:scroll; height:inherit"> 
+            <div class="content-block-title" style="padding-top: 64px;font-size:18px;"></div>
+            <div class="list-block" style="margin-bottom: 70px;">
+                <ul style="background-color:white;" class="arabic">
+                    <li>
+                        <div class="item-content " >
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="width:100%;" data-i18n="suggestions.title_word"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " >
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]suggestions.title_word" name="suggestion_title_text" id="suggestion_title_text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " >
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="width:100%;" data-i18n="suggestions.suggestion"> </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " >
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]suggestions.suggestion" name="sugestion_text" id="sugestion_text" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " >
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="width:100%;" data-i18n="suggestions.Description"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " >
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <textarea id="suggestion_desc" class="" data-i18n="[placeholder]suggestions.Description" style="" name="suggestion_desc" placeholder=""></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only " onclick="SuggestionsApp()" style="color:white;border-right:1px white solid;;text-align: center" data-i18n="general.submit">Submit</a>
+                <a href="#"  class="link icon-only " style="color:white;;text-align: center" data-i18n="general.cancel">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>

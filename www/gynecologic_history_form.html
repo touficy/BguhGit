@@ -1,0 +1,141 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white translation-init " style="" data-i18n="gynecologic_history_form.title"></div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="MobileAppInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="gynecologic_history_form" class="page arabic">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="list-block" style="padding-top: 43px;margin-bottom: 70px;">
+                <ul style="background-color:#FFFFFF">
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="gynecologic_history_form.Age"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]gynecologic_history_form.Age" name="gyne_his_afp" id="gyne_his_afp" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="gynecologic_history_form.Smear"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]gynecologic_history_form.Smear" name="gyne_his_dolps" id="gyne_his_dolps" placeholder="" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="gynecologic_history_form.Result"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]gynecologic_history_form.Result" name="gyne_his_result" id="gyne_his_result" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-input">
+                                <label class="label-checkbox item-content">
+	                                <input type="checkbox" name="gyne_his_have_abpap" id="gyne_his_have_abpap" value="1" onclick="ShowHideDiv(this)">
+	                              		<div class="item-media">
+	                              			<i class="icon icon-form-checkbox"></i>
+	                               		</div>
+	                               	<div class="item-inner">
+	                                	<div class="item-title translation-init " style="" data-i18n="gynecologic_history_form.abnormal"></div>
+	                               </div>
+	                             </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " id="dvPassport" style="">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="gynecologic_history_form.year"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]gynecologic_history_form.year" name="gyne_his_wyear" id="gyne_his_wyear" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " id="dvPassport1" style="">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="gynecologic_history_form.treatment"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]gynecologic_history_form.treatment" name="gyne_his_wk" id="gyne_his_wk" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-input">
+                                <label class="label-checkbox item-content">
+	                                <input type="checkbox" name="gyne_his_have_sex_trinf" id="gyne_his_have_sex_trinf" value="1" onclick="ShowHideDiv1(this)">
+	                              		<div class="item-media">
+	                              			<i class="icon icon-form-checkbox"></i>
+	                               		</div>
+	                               	<div class="item-inner">
+	                                	<div class="item-title translation-init " style="" data-i18n="gynecologic_history_form.Infections"></div>
+	                               </div>
+	                             </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content " id="dvPassport3" style="">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="gynecologic_history_form.ifyestype"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]gynecologic_history_form.ifyestype" name="gyne_his_wtypes" id="gyne_his_wtypes" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <input type="hidden" name="gyne_his_update" id="gyne_his_update" placeholder="id ">
+            </div>
+        </div>
+        <!-- 	<div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+    <div class="toolbar-inner" style="background:#0DB7C4;">
+      <a href="#" onclick="gynecologicformSubmit();" class="link icon-only" style="color:white;border-right:1px white solid ">Submit</a>
+      <a href="loginnormal.html"  class="link icon-only" style="color:white">Cancel</a>
+    </div>
+  </div> -->
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="gynacologies_inbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="gynecologicformSubmit();" style="color:white;border-right:1px white solid;" data-i18n="general.update"></a>
+                <a href="#" onclick="deletegynecologicHis();" class="link icon-only " style="color:white;" data-i18n="general.delete"></a>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="gynacologies_upbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="gynecologicformSubmit();" style="color:white;border-right:1px white solid;" data-i18n="general.submit"></a>
+                <a href="loginnormal.html" class="link icon-only " style="color:white;" data-i18n="general.cancel"></a>
+            </div>
+        </div>
+    </div>
+</div>

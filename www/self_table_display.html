@@ -1,0 +1,43 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="display: none" class="center sliding white unhide-en">Table Display</div>
+        <div style="display: none" class="center sliding white unhide-sp">Pantalla de tabla</div>
+        <div style="display: none" class="center sliding white unhide-ru">Дисплей таблицы</div>
+        <div style="display: none" class="center sliding white unhide-fr">Tableau d'affichage</div>
+        <div style="display: none" class="center sliding white unhide-ar">الجدول</div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="MobileAppInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i>
+            </a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="self_table_display" class="page arabic" >
+        <div class="content-block-title unhide-en" style="padding-top: 64px;font-size:18px;display: none">Self Monitoring Charts Reports</div>
+        <div class="content-block-title unhide-sp" style="padding-top: 64px;font-size:18px;display: none">Informes de gráficos de autocontrol</div>
+        <div class="content-block-title unhide-ru" style="padding-top: 64px;font-size:18px;display: none">Отчеты о самодиагностике</div>
+        <div class="content-block-title unhide-fr" style="padding-top: 64px;font-size:18px;display: none">Rapports de graphiques d'auto-surveillance</div>
+        <div class="content-block-title unhide-ar" style="padding-top: 64px;font-size:18px;display: none">تقارير الرصد الذاتي</div>
+        <div class="selfdata1" style="margin-bottom: 46px;overflow: scroll;margin-left: 19px;">
+            <table class="one arabic">
+                <thead>
+                    <tr id="self_mon_tab_data">
+                        <th style="display: none" class="unhide-en-table-cell">Date</th>
+                        <th style="display: none" class="unhide-sp-table-cell">Fecha</th>
+                        <th style="display: none" class="unhide-ru-table-cell">Дата</th>
+                        <th style="display: none" class="unhide-fr-table-cell">Date</th>
+                        <th style="display: none" class="unhide-ar-table-cell">التاريخ</th>
+                    </tr>
+                </thead>
+                <tbody id="self_table_data">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

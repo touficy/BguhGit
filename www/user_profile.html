@@ -1,0 +1,1311 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+    <div class="center sliding white translation-init " style="" data-i18n="user_profile.title"></div>
+   
+    <div class="right theme-white navicon">
+      <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<div class="pages navbar-through toolbar-fixedSS">
+  <div data-page="user_profile" class="page">
+    <div style="overflow-y:scroll;height:inherit">
+      <div class="list-block accordion-list" style="padding-top: 64px;margin-bottom:55px;">
+       
+
+<ul style="background-color: white">
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div style="" class="item-title label " data-i18n="user_profile.fname">First Name</div>
+        <div class="item-input">
+          <input type="text" style="" class="" data-i18n="[placeholder]user_profile.fname" name="nameProfile" id="nameProfile" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div style="" class="item-title label " data-i18n="user_profile.mname">Midle Name</div>
+        <div class="item-input">
+          <input type="text" style="" class="" data-i18n="[placeholder]user_profile.mname" name="name" id="middleName" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div style="" class="item-title label " data-i18n="user_profile.lname">Last Name</div>
+        <div class="item-input">
+          <input type="text" style="" class="" data-i18n="[placeholder]user_profile.lname" name="lname" id="lname" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <!-- <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div style="" class="item-title label " data-i18n="user_profile.email">Email</div>
+        <div class="item-input">
+          <input type="email" style="" class="" data-i18n="[placeholder]user_profile.email" name="email" id="email" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li> -->
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div style="" class="item-title label " data-i18n="user_profile.username">User Name</div>
+        <div class="item-input">
+          <input type="text" style="" class="" data-i18n="[placeholder]user_profile.username" name="uname" id="uname" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div style="" class="item-title label " data-i18n="user_profile.password">Password</div>
+        <div class="item-input">
+          <input type="password" style="" class="" data-i18n="[placeholder]user_profile.password" name="password" id="password" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+
+
+<ul style="background-color: white">
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.dob">Date of Birth</div>
+        <div class="item-input">
+          <input type="text" class="" style="" data-i18n="[placeholder]user_profile.dob" name="per_dob" id="per_dob" placeholder="" readonly onclick="getcalUserP();" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <!-- <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.martial">Matrial status</div>
+        <div class="item-input">
+          <select name="primary_m_status" id="primary_m_status" class="" style="">
+            <option data-i18n="user_profile.single"></option>
+            <option data-i18n="user_profile.married"></option>
+            <option data-i18n="user_profile.divorced"></option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </li> -->
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.gender">Gender</div>
+        <div class="item-input">
+          <!-- <select name="primary_gen" id="primary_gen" class="" style="">
+            <option data-i18n="user_profile.male"></option>
+            <option data-i18n="user_profile.female"></option>
+          </select> -->
+           <input type="text" id="primary_gen">
+        </div>
+      </div>
+    </div>
+  </li>
+  <div id="showUS">
+    <!-- <li>
+      <div class="item-content item-title_inner" style="">
+        <div class="item-inner translation-init">
+          <div class="item-title label " data-i18n="user_profile.height_feet">Hight in cms</div>
+          <div class="item-input">
+            <input type="number" class="" style="" data-i18n="[placeholder]user_profile.height_feet" name="user_height_f" id="user_height_f" placeholder="" onkeyup="autocallBMI_U()">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content item-title_inner">
+        <div class="item-inner translation-init">
+          <div class="item-title label " style="" data-i18n="user_profile.height_inches">Weight in KG</div>
+          <div class="item-input">
+            <input type="number" class="" style="" data-i18n="[placeholder]user_profile.height_inches" name="user_height_i" id="user_height_i" placeholder="" onkeyup="autocallBMI_U()">
+          </div>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="item-content item-title_inner">
+        <div class="item-inner translation-init">
+          <div class="item-title label " style="" data-i18n="user_profile.weight_pounds">BMI</div>
+          <div class="item-input">
+            <input type="number" class="" style="" data-i18n="[placeholder]user_profile.weight_pounds" name="user_weight" id="user_weight" placeholder="" onkeyup="autocallBMI_U()">
+          </div>
+        </div>
+      </div>
+    </li> -->
+  </div>
+  <div id="showEUROPE">
+    <!-- <li>
+      <div class="item-content item-title_inner">
+        <div class="item-inner translation-init">
+          <div class="item-title label " style="" data-i18n="user_profile.height_cms">Hospital Born At</div>
+          <div class="item-input">
+            <input type="number" class="" style="" data-i18n="[placeholder]user_profile.height_cms" name="user_height_cm" id="user_height_cm" placeholder="" onkeyup="autocallBMI_E()">
+          </div>
+        </div>
+      </div>
+    </li> -->
+    <!-- <li>
+      <div class="item-content item-title_inner">
+        <div class="item-inner translation-init">
+          <div class="item-title label " style="" data-i18n="user_profile.weight_kgs">Blood Group</div>
+          <div class="item-input">
+            <input type="number" class="" style="" data-i18n="[placeholder]user_profile.weight_kgs" name="user_weight_kg" id="user_weight_kg" placeholder="" onkeyup="autocallBMI_E()">
+          </div>
+        </div>
+      </div>
+    </li>
+  </div>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.bmi"></div>
+        <div class="item-input">
+          <input type="number" class="" style="" data-i18n="[placeholder]user_profile.bmi" name="user_bmi" id="user_bmi" placeholder="">
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.bornat"></div>
+        <div class="item-input">
+          <input type="text" class="" style="" data-i18n="[placeholder]user_profile.bornat" name="user_born_at" id="user_born_at" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li> -->
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner">
+        <div class="item-title label  translation-init" style="" data-i18n="user_profile.blood_group"></div>
+        <div class="item-input">
+          <!-- <input type="text" name="user_bgroop" id="user_bgroop" placeholder="Blood Group" /> -->
+          <select name="user_bgroop" id="user_bgroop">
+            <option value="1">A +</option>
+            <option value="2">A −</option>
+            <option value="3">B +</option>
+            <option value="4">B -</option>
+            <option value="5">O +</option>
+            <option value="6">O -</option>
+            <option value="7">AB+</option>
+            <option value="8">AB-</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+
+<ul style="background-color: white">
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.country"></div>
+        <div class="item-input" id="addcountriesuser">
+          <!-- <input type="text" name="primary_country" id="primary_country" onclick="userCountry();" placeholder="Country" /> -->
+          <select name="primary_country" id="primary_country" onchange="userState(this.value);">
+            <option value="1">Afghanistan</option>
+            <option value="2">Albania</option>
+            <option value="3">Algeria</option>
+            <option value="4">American Samoa</option>
+            <option value="5">Andorra</option>
+            <option value="6">Angola</option>
+            <option value="7">Anguilla</option>
+            <option value="8">Antarctica</option>
+            <option value="9">Antigua and Barbuda</option>
+            <option value="10">Argentina</option>
+            <option value="11">Armenia</option>
+            <option value="12">Aruba</option>
+            <option value="13">Australia</option>
+            <option value="14">Austria</option>
+            <option value="15">Azerbaijan</option>
+            <option value="16">Bahamas</option>
+            <option value="17">Bahrain</option>
+            <option value="18">Bangladesh</option>
+            <option value="19">Barbados</option>
+            <option value="20">Belarus</option>
+            <option value="21">Belgium</option>
+            <option value="22">Belize</option>
+            <option value="23">Benin</option>
+            <option value="24">Bermuda</option>
+            <option value="25">Bhutan</option>
+            <option value="26">Bolivia</option>
+            <option value="27">Bosnia and Herzegowina</option>
+            <option value="28">Botswana</option>
+            <option value="29">Bouvet Island</option>
+            <option value="30">Brazil</option>
+            <option value="31">British Indian Ocean Territory</option>
+            <option value="32">Brunei Darussalam</option>
+            <option value="33">Bulgaria</option>
+            <option value="34">Burkina Faso</option>
+            <option value="35">Burundi</option>
+            <option value="36">Cambodia</option>
+            <option value="37">Cameroon</option>
+            <option value="38">Canada</option>
+            <option value="39">Cape Verde</option>
+            <option value="40">Cayman Islands</option>
+            <option value="41">Central African Republic</option>
+            <option value="42">Chad</option>
+            <option value="43">Chile</option>
+            <option value="44">China</option>
+            <option value="45">Christmas Island</option>
+            <option value="46">Cocos Islands</option>
+            <option value="47">Colombia</option>
+            <option value="48">Comoros</option>
+            <option value="49">Congo</option>
+            <option value="50">Cook Islands</option>
+            <option value="51">Costa Rica</option>
+            <option value="52">Cote D''Ivoire</option>
+            <option value="53">Croatia</option>
+            <option value="54">Cuba</option>
+            <option value="55">Cyprus</option>
+            <option value="56">Czech Republic</option>
+            <option value="57">Denmark</option>
+            <option value="58">Djibouti</option>
+            <option value="59">Dominica</option>
+            <option value="60">Dominican Republic</option>
+            <option value="61">East Timor</option>
+            <option value="62">Ecuador</option>
+            <option value="63">Egypt</option>
+            <option value="64">El Salvador</option>
+            <option value="65">Equatorial Guinea</option>
+            <option value="66">Eritrea</option>
+            <option value="67">Estonia</option>
+            <option value="68">Ethiopia</option>
+            <option value="69">Falkland Islands Malvinas</option>
+            <option value="70">Faroe Islands</option>
+            <option value="71">Fiji</option>
+            <option value="72">Finland</option>
+            <option value="73">France</option>
+            <option value="74">France, Metropolitan</option>
+            <option value="75">French Guiana</option>
+            <option value="76">French Polynesia</option>
+            <option value="77">French Southern Territories</option>
+            <option value="78">Gabon</option>
+            <option value="79">Gambia</option>
+            <option value="80">Georgia</option>
+            <option value="81">Germany</option>
+            <option value="82">Ghana</option>
+            <option value="83">Gibraltar</option>
+            <option value="84">Greece</option>
+            <option value="85">Greenland</option>
+            <option value="86">Grenada</option>
+            <option value="87">Guadeloupe</option>
+            <option value="88">Guam</option>
+            <option value="89">Guatemala</option>
+            <option value="90">Guinea</option>
+            <option value="91">Guinea-bissau</option>
+            <option value="92">Guyana</option>
+            <option value="93">Haiti</option>
+            <option value="94">Heard and Mc Donald Islands</option>
+            <option value="95">Honduras</option>
+            <option value="96">Hong Kong</option>
+            <option value="97">Hungary</option>
+            <option value="98">Iceland</option>
+            <option value="99">India</option>
+            <option value="100">Indonesia</option>
+            <option value="101">Iran Islamic Republic of</option>
+            <option value="102">Iraq</option>
+            <option value="103">Ireland</option>
+            <option value="104">Israel</option>
+            <option value="105">Italy</option>
+            <option value="106">Jamaica</option>
+            <option value="107">Japan</option>
+            <option value="108">Jordan</option>
+            <option value="109">Kazakhstan</option>
+            <option value="110">Kenya</option>
+            <option value="111">Kiribati</option>
+            <option value="112">Korea, Democratic People''s Republic of</option>
+            <option value="113">Korea, Republic of</option>
+            <option value="114">Kuwait</option>
+            <option value="115">Kyrgyzstan</option>
+            <option value="116">Lao People''s Democratic Republic</option>
+            <option value="117">Latvia</option>
+            <option value="118">Lebanon</option>
+            <option value="119">Lesotho</option>
+            <option value="120">Liberia</option>
+            <option value="121">Libyan Arab Jamahiriya</option>
+            <option value="122">Liechtenstein</option>
+            <option value="123">Lithuania</option>
+            <option value="124">Luxembourg</option>
+            <option value="125">Macau</option>
+            <option value="126">Macedonia, The Former Yugoslav Republic of</option>
+            <option value="127">Madagascar</option>
+            <option value="128">Malawi</option>
+            <option value="129">Malaysia</option>
+            <option value="130">Maldives</option>
+            <option value="131">Mali</option>
+            <option value="132">Malta</option>
+            <option value="133">Marshall Islands</option>
+            <option value="134">Martinique</option>
+            <option value="135">Mauritania</option>
+            <option value="136">Mauritius</option>
+            <option value="137">Mayotte</option>
+            <option value="138">Mexico</option>
+            <option value="139">Micronesia, Federated States of</option>
+            <option value="140">Moldova, Republic of</option>
+            <option value="141">Monaco</option>
+            <option value="142">Mongolia</option>
+            <option value="143">Montserrat</option>
+            <option value="144">Morocco</option>
+            <option value="145">Mozambique</option>
+            <option value="146">Myanmar</option>
+            <option value="147">Namibia</option>
+            <option value="148">Nauru</option>
+            <option value="149">Nepal</option>
+            <option value="150">Netherlands</option>
+            <option value="151">Netherlands Antilles</option>
+            <option value="152">New Caledonia</option>
+            <option value="153">New Zealand</option>
+            <option value="154">Nicaragua</option>
+            <option value="155">Niger</option>
+            <option value="156">Nigeria</option>
+            <option value="157">Niue</option>
+            <option value="158">Norfolk Island</option>
+            <option value="159">Northern Mariana Islands</option>
+            <option value="160">Norway</option>
+            <option value="161">Oman</option>
+            <option value="162">Pakistan</option>
+            <option value="163">Palau</option>
+            <option value="164">Panama</option>
+            <option value="165">Papua New Guinea</option>
+            <option value="166">Paraguay</option>
+            <option value="167">Peru</option>
+            <option value="168">Philippines</option>
+            <option value="169">Pitcairn</option>
+            <option value="170">Poland</option>
+            <option value="171">Portugal</option>
+            <option value="172">Puerto Rico</option>
+            <option value="173">Qatar</option>
+            <option value="174">Reunion</option>
+            <option value="175">Romania</option>
+            <option value="176">Russian Federation</option>
+            <option value="177">Rwanda</option>
+            <option value="178">Saint Kitts and Nevis</option>
+            <option value="179">Saint Lucia</option>
+            <option value="180">Saint Vincent and the Grenadines</option>
+            <option value="181">Samoa</option>
+            <option value="182">San Marino</option>
+            <option value="183">Sao Tome and Principe</option>
+            <option value="184">Saudi Arabia</option>
+            <option value="185">Senegal</option>
+            <option value="186">Seychelles</option>
+            <option value="187">Sierra Leone</option>
+            <option value="188">Singapore</option>
+            <option value="189">Slovakia Slovak Republic</option>
+            <option value="190">Slovenia</option>
+            <option value="191">Solomon Islands</option>
+            <option value="192">Somalia</option>
+            <option value="193">South Africa</option>
+            <option value="194">South Georgia and the South Sandwich Islands</option>
+            <option value="195">Spain</option>
+            <option value="196">Sri Lanka</option>
+            <option value="197">St. Helena</option>
+            <option value="198">St. Pierre and Miquelon</option>
+            <option value="199">Sudan</option>
+            <option value="200">Suriname</option>
+            <option value="201">Svalbard and Jan Mayen Islands</option>
+            <option value="202">Swaziland</option>
+            <option value="203">Sweden</option>
+            <option value="204">Switzerland</option>
+            <option value="205">Syrian Arab Republic</option>
+            <option value="206">Taiwan</option>
+            <option value="207">Tajikistan</option>
+            <option value="208">Tanzania, United Republic of</option>
+            <option value="209">Thailand</option>
+            <option value="210">Togo</option>
+            <option value="211">Tokelau</option>
+            <option value="212">Tonga</option>
+            <option value="213">Trinidad and Tobago</option>
+            <option value="214">Tunisia</option>
+            <option value="215">Turkey</option>
+            <option value="216">Turkmenistan</option>
+            <option value="217">Turks and Caicos Islands</option>
+            <option value="218">Tuvalu</option>
+            <option value="219">Uganda</option>
+            <option value="220">Ukraine</option>
+            <option value="221">United Arab Emirates</option>
+            <option value="222">United Kingdom</option>
+            <option value="223">United States</option>
+            <option value="224">United States Minor Outlying Islands</option>
+            <option value="225">Uruguay</option>
+            <option value="226">Uzbekistan</option>
+            <option value="227">Vanuatu</option>
+            <option value="228">Vatican City Holy See</option>
+            <option value="229">Venezuela</option>
+            <option value="230">Viet Nam</option>
+            <option value="231">Virgin Islands British</option>
+            <option value="232">Virgin Islands U.S.</option>
+            <option value="233">Wallis and Futuna Islands</option>
+            <option value="234">Western Sahara</option>
+            <option value="235">Yemen</option>
+            <option value="236">Yugoslavia</option>
+            <option value="237">Zaire</option>
+            <option value="238">Zambia</option>
+            <option value="239">Zimbabwe</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.Nationality">Nationality</div>
+        <div class="item-input">
+          <input type="text" class="" style="" data-i18n="[placeholder]user_profile.Nationality" name="primary_nationality" id="primary_nationality" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.Street"></div>
+        <div class="item-input">
+          <input type="text" class="" style="" data-i18n="[placeholder]user_profile.Street" name="primary_street" id="primary_street" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.City"></div>
+        <div class="item-input">
+          <input type="text" class="" style="" data-i18n="[placeholder]user_profile.City" name="primary_city" id="primary_city" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+ 
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.State"></div>
+        <div class="item-input" id="stateid">
+          <select name="primary_state" id="primary_state" placeholder="" class="" data-i18n="[placeholder]user_profile.State" style="">
+            <option data-i18n="[placeholder]user_profile.select_country" value=""></option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label" style="" data-i18n="user_profile.Zip"></div>
+        <div class="item-input" id="stateid">
+          <select aria-label="Country" id="zipcode" onchange="handle_phonenum();" class="absolute opacity-0 pin-t pin-l h-12">
+            <option value="af">
+              Afghanistan (+93)
+            </option>
+            <option value="al">
+              Albania (+355)
+            </option>
+            <option value="dz">
+              Algeria (+213)
+            </option>
+            <option value="as">
+              American Samoa (+1684)
+            </option>
+            <option value="ad">
+              Andorra (+376)
+            </option>
+            <option value="ao">
+              Angola (+244)
+            </option>
+            <option value="ai">
+              Anguilla (+1264)
+            </option>
+            <option value="ag">
+              Antigua and Barbuda (+1268)
+            </option>
+            <option value="ar">
+              Argentina (+54)
+            </option>
+            <option value="am">
+              Armenia (+374)
+            </option>
+            <option value="aw">
+              Aruba (+297)
+            </option>
+            <option value="au">
+              Australia (+61)
+            </option>
+            <option value="at">
+              Austria (+43)
+            </option>
+            <option value="az">
+              Azerbaijan (+994)
+            </option>
+            <option value="bs">
+              Bahamas (+1242)
+            </option>
+            <option value="bh">
+              Bahrain (+973)
+            </option>
+            <option value="bd">
+              Bangladesh (+880)
+            </option>
+            <option value="bb">
+              Barbados (+1246)
+            </option>
+            <option value="by">
+              Belarus (+375)
+            </option>
+            <option value="be">
+              Belgium (+32)
+            </option>
+            <option value="bz">
+              Belize (+501)
+            </option>
+            <option value="bj">
+              Benin (+229)
+            </option>
+            <option value="bm">
+              Bermuda (+1441)
+            </option>
+            <option value="bt">
+              Bhutan (+975)
+            </option>
+            <option value="bo">
+              Bolivia (+591)
+            </option>
+            <option value="ba">
+              Bosnia and Herzegovina (+387)
+            </option>
+            <option value="bw">
+              Botswana (+267)
+            </option>
+            <option value="br">
+              Brazil (+55)
+            </option>
+            <option value="io">
+              British Indian Ocean Territory (+246)
+            </option>
+            <option value="vg">
+              British Virgin Islands (+1284)
+            </option>
+            <option value="bn">
+              Brunei (+673)
+            </option>
+            <option value="bg">
+              Bulgaria (+359)
+            </option>
+            <option value="bf">
+              Burkina Faso (+226)
+            </option>
+            <option value="mm">
+              Burma-Myanmar (+95)
+            </option>
+            <option value="bi">
+              Burundi (+257)
+            </option>
+            <option value="kh">
+              Cambodia (+855)
+            </option>
+            <option value="cm">
+              Cameroon (+237)
+            </option>
+            <option value="ca">
+              Canada (+1)
+            </option>
+            <option value="cv">
+              Cape Verde (+238)
+            </option>
+            <option value="ky">
+              Cayman Islands (+1345)
+            </option>
+            <option value="cf">
+              Central African Republic (+236)
+            </option>
+            <option value="td">
+              Chad (+235)
+            </option>
+            <option value="cl">
+              Chile (+56)
+            </option>
+            <option value="cn">
+              China (+86)
+            </option>
+            <option value="cx">
+              Christmas Island (+6189)
+            </option>
+            <option value="co">
+              Colombia (+57)
+            </option>
+            <option value="km">
+              Comoros (+269)
+            </option>
+            <option value="cg">
+              Congo (+242)
+            </option>
+            <option value="cd">
+              Congo, The Democratic Republic (+243)
+            </option>
+            <option value="ck">
+              Cook Islands (+682)
+            </option>
+            <option value="cr">
+              Costa Rica (+506)
+            </option>
+            <option value="hr">
+              Croatia (+385)
+            </option>
+            <option value="cu">
+              Cuba (+53)
+            </option>
+            <option value="cy">
+              Cyprus (+357)
+            </option>
+            <option value="cz">
+              Czech Republic (+420)
+            </option>
+            <option value="dk">
+              Denmark (+45)
+            </option>
+            <option value="dj">
+              Djibouti (+253)
+            </option>
+            <option value="dm">
+              Dominica (+1767)
+            </option>
+            <option value="do">
+              Dominican Republic (+1849)
+            </option>
+            <option value="do">
+              Dominican Republic (+1829)
+            </option>
+            <option value="do">
+              Dominican Republic (+1809)
+            </option>
+            <option value="tl">
+              East Timor (+670)
+            </option>
+            <option value="ec">
+              Ecuador (+593)
+            </option>
+            <option value="eg">
+              Egypt (+20)
+            </option>
+            <option value="sv">
+              El Salvador (+503)
+            </option>
+            <option value="gq">
+              Equatorial Guinea (+240)
+            </option>
+            <option value="er">
+              Eritrea (+291)
+            </option>
+            <option value="ee">
+              Estonia (+372)
+            </option>
+            <option value="et">
+              Ethiopia (+251)
+            </option>
+            <option value="fo">
+              Faroe Islands (+298)
+            </option>
+            <option value="fj">
+              Fiji (+679)
+            </option>
+            <option value="fi">
+              Finland (+358)
+            </option>
+            <option value="fr">
+              France (+33)
+            </option>
+            <option value="gf">
+              French Guiana (+594)
+            </option>
+            <option value="pf">
+              French Polynesia (+689)
+            </option>
+            <option value="ga">
+              Gabon (+241)
+            </option>
+            <option value="gm">
+              Gambia (+220)
+            </option>
+            <option value="ge">
+              Georgia (+995)
+            </option>
+            <option value="de">
+              Germany (+49)
+            </option>
+            <option value="gh">
+              Ghana (+233)
+            </option>
+            <option value="gi">
+              Gibraltar (+350)
+            </option>
+            <option value="gr">
+              Greece (+30)
+            </option>
+            <option value="gl">
+              Greenland (+299)
+            </option>
+            <option value="gd">
+              Grenada (+1473)
+            </option>
+            <option value="gp">
+              Guadeloupe (+590)
+            </option>
+            <option value="gu">
+              Guam (+1671)
+            </option>
+            <option value="gt">
+              Guatemala (+502)
+            </option>
+            <option value="gn">
+              Guinea (+224)
+            </option>
+            <option value="gw">
+              Guinea-Bissau (+245)
+            </option>
+            <option value="gy">
+              Guyana (+592)
+            </option>
+            <option value="ht">
+              Haiti (+509)
+            </option>
+            <option value="hn">
+              Honduras (+504)
+            </option>
+            <option value="hk">
+              Hong Kong (+852)
+            </option>
+            <option value="hu">
+              Hungary (+36)
+            </option>
+            <option value="is">
+              Iceland (+354)
+            </option>
+            <option value="in">
+              India (+91)
+            </option>
+            <option value="id">
+              Indonesia (+62)
+            </option>
+            <option value="ir">
+              Iran (+98)
+            </option>
+            <option value="iq">
+              Iraq (+964)
+            </option>
+            <option value="ie">
+              Ireland (+353)
+            </option>
+            <option value="il">
+              Israel (+972)
+            </option>
+            <option value="it">
+              Italy (+39)
+            </option>
+            <option value="ci">
+              Ivory Coast (+225)
+            </option>
+            <option value="jm">
+              Jamaica (+1876)
+            </option>
+            <option value="jp">
+              Japan (+81)
+            </option>
+            <option value="jo">
+              Jordan (+962)
+            </option>
+            <option value="kz">
+              Kazakhstan (+7)
+            </option>
+            <option value="ke">
+              Kenya (+254)
+            </option>
+            <option value="ki">
+              Kiribati (+686)
+            </option>
+            <option value="kw">
+              Kuwait (+965)
+            </option>
+            <option value="kg">
+              Kyrgyzstan (+996)
+            </option>
+            <option value="la">
+              Laos (+856)
+            </option>
+            <option value="lv">
+              Latvia (+371)
+            </option>
+            <option value="lb">
+              Lebanon (+961)
+            </option>
+            <option value="ls">
+              Lesotho (+266)
+            </option>
+            <option value="lr">
+              Liberia (+231)
+            </option>
+            <option value="ly">
+              Libya (+218)
+            </option>
+            <option value="li">
+              Liechtenstein (+423)
+            </option>
+            <option value="lt">
+              Lithuania (+370)
+            </option>
+            <option value="lu">
+              Luxembourg (+352)
+            </option>
+            <option value="mo">
+              Macau (+853)
+            </option>
+            <option value="mk">
+              Macedonia (+389)
+            </option>
+            <option value="mg">
+              Madagascar (+261)
+            </option>
+            <option value="mw">
+              Malawi (+265)
+            </option>
+            <option value="my">
+              Malaysia (+60)
+            </option>
+            <option value="mv">
+              Maldives (+960)
+            </option>
+            <option value="ml">
+              Mali (+223)
+            </option>
+            <option value="mt">
+              Malta (+356)
+            </option>
+            <option value="mh">
+              Marshall Islands (+692)
+            </option>
+            <option value="mq">
+              Martinique (+596)
+            </option>
+            <option value="mr">
+              Mauritania (+222)
+            </option>
+            <option value="mu">
+              Mauritius (+230)
+            </option>
+            <option value="yt">
+              Mayotte (+262)
+            </option>
+            <option value="mx">
+              Mexico (+52)
+            </option>
+            <option value="md">
+              Moldova (+373)
+            </option>
+            <option value="mc">
+              Monaco (+377)
+            </option>
+            <option value="mn">
+              Mongolia (+976)
+            </option>
+            <option value="me">
+              Montenegro (+382)
+            </option>
+            <option value="ms">
+              Montserrat (+1664)
+            </option>
+            <option value="ma">
+              Morocco (+212)
+            </option>
+            <option value="mz">
+              Mozambique (+258)
+            </option>
+            <option value="na">
+              Namibia (+264)
+            </option>
+            <option value="nr">
+              Nauru (+674)
+            </option>
+            <option value="np">
+              Nepal (+977)
+            </option>
+            <option value="nl">
+              Netherlands (+31)
+            </option>
+            <option value="cw">
+              Curaçao (+599)
+            </option>
+            <option value="nc">
+              New Caledonia (+687)
+            </option>
+            <option value="nz">
+              New Zealand (+64)
+            </option>
+            <option value="ni">
+              Nicaragua (+505)
+            </option>
+            <option value="ne">
+              Niger (+227)
+            </option>
+            <option value="ng">
+              Nigeria (+234)
+            </option>
+            <option value="nu">
+              Niue (+683)
+            </option>
+            <option value="nf">
+              Norfolk Island (+672)
+            </option>
+            <option value="mp">
+              Northern Mariana Islands (+1670)
+            </option>
+            <option value="kp">
+              North Korea (+850)
+            </option>
+            <option value="no">
+              Norway (+47)
+            </option>
+            <option value="om">
+              Oman (+968)
+            </option>
+            <option value="pk">
+              Pakistan (+92)
+            </option>
+            <option value="pw">
+              Palau (+680)
+            </option>
+            <option value="ps">
+              Palestine (+970)
+            </option>
+            <option value="pa">
+              Panama (+507)
+            </option>
+            <option value="pg">
+              Papua New Guinea (+675)
+            </option>
+            <option value="py">
+              Paraguay (+595)
+            </option>
+            <option value="pe">
+              Peru (+51)
+            </option>
+            <option value="ph">
+              Philippines (+63)
+            </option>
+            <option value="pn">
+              Pitcairn Islands (+870)
+            </option>
+            <option value="pl">
+              Poland (+48)
+            </option>
+            <option value="pt">
+              Portugal (+351)
+            </option>
+            <option value="pr">
+              Puerto Rico (+1787)
+            </option>
+            <option value="qa">
+              Qatar (+974)
+            </option>
+            <option value="re">
+              Réunion (+262)
+            </option>
+            <option value="ro">
+              Romania (+40)
+            </option>
+            <option value="ru">
+              Russia (+7)
+            </option>
+            <option value="rw">
+              Rwanda (+250)
+            </option>
+            <option value="sh">
+              Saint Helena (+290)
+            </option>
+            <option value="kn">
+              Saint Kitts and Nevis (+1869)
+            </option>
+            <option value="lc">
+              Saint Lucia (+1758)
+            </option>
+            <option value="mf">
+              Saint Martin (+1599)
+            </option>
+            <option value="pm">
+              Saint Pierre and Miquelon (+508)
+            </option>
+            <option value="vc">
+              Saint Vincent and the Grenadines (+1784)
+            </option>
+            <option value="ws">
+              Samoa (+685)
+            </option>
+            <option value="sm">
+              San Marino (+378)
+            </option>
+            <option value="st">
+              São Tomé and Príncipe (+239)
+            </option>
+            <option value="sa">
+              Saudi Arabia (+966)
+            </option>
+            <option value="sn">
+              Senegal (+221)
+            </option>
+            <option value="rs">
+              Serbia (+381)
+            </option>
+            <option value="sc">
+              Seychelles (+248)
+            </option>
+            <option value="fk">
+              Falkland Islands (+500)
+            </option>
+            <option value="sl">
+              Sierra Leone (+232)
+            </option>
+            <option value="sg">
+              Singapore (+65)
+            </option>
+            <option value="sk">
+              Slovakia (+421)
+            </option>
+            <option value="si">
+              Slovenia (+386)
+            </option>
+            <option value="sb">
+              Solomon Islands (+677)
+            </option>
+            <option value="so">
+              Somalia (+252)
+            </option>
+            <option value="za">
+              South Africa (+27)
+            </option>
+            <option value="kr">
+              South Korea (+82)
+            </option>
+            <option value="ss">
+              South Sudan (+211)
+            </option>
+            <option value="es">
+              Spain (+34)
+            </option>
+            <option value="lk">
+              Sri Lanka (+94)
+            </option>
+            <option value="sd">
+              Sudan (+249)
+            </option>
+            <option value="sr">
+              Suriname (+597)
+            </option>
+            <option value="sz">
+              Swaziland (+268)
+            </option>
+            <option value="se">
+              Sweden (+46)
+            </option>
+            <option value="ch">
+              Switzerland (+41)
+            </option>
+            <option value="sy">
+              Syria (+963)
+            </option>
+            <option value="tw">
+              Taiwan (+886)
+            </option>
+            <option value="tj">
+              Tajikistan (+992)
+            </option>
+            <option value="tz">
+              Tanzania (+255)
+            </option>
+            <option value="th">
+              Thailand (+66)
+            </option>
+            <option value="tg">
+              Togo (+228)
+            </option>
+            <option value="tk">
+              Tokelau (+690)
+            </option>
+            <option value="to">
+              Tonga (+676)
+            </option>
+            <option value="tt">
+              Trinidad and Tobago (+1868)
+            </option>
+            <option value="tn">
+              Tunisia (+216)
+            </option>
+            <option value="tr">
+              Turkey (+90)
+            </option>
+            <option value="tm">
+              Turkmenistan (+993)
+            </option>
+            <option value="tc">
+              Turks and Caicos Islands (+1649)
+            </option>
+            <option value="tv">
+              Tuvalu (+688)
+            </option>
+            <option value="ug">
+              Uganda (+256)
+            </option>
+            <option value="gb">
+              United Kingdom (+44)
+            </option>
+            <option value="ua">
+              Ukraine (+380)
+            </option>
+            <option value="ae">
+              United Arab Emirates (+971)
+            </option>
+            <option value="uy">
+              Uruguay (+598)
+            </option>
+            <option value="us">
+              United States (+1)
+            </option>
+            <option value="uz">
+              Uzbekistan (+998)
+            </option>
+            <option value="vu">
+              Vanuatu (+678)
+            </option>
+            <option value="ve">
+              Venezuela (+58)
+            </option>
+            <option value="vn">
+              Vietnam (+84)
+            </option>
+            <option value="vi">
+              Virgin Islands (+1340)
+            </option>
+            <option value="wf">
+              Wallis and Futuna (+681)
+            </option>
+            <option value="ye">
+              Yemen (+967)
+            </option>
+            <option value="zm">
+              Zambia (+260)
+            </option>
+            <option value="zw">
+              Zimbabwe (+263)
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </li>
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.home_phone"></div>
+        <div class="item-input">
+          <input type="tel" class="" style="" data-i18n="" name="primary_h_phone_no" id="primary_h_phone_no" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+  <!-- <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.work_phone"></div>
+        <div class="item-input">
+          <input type="tel" class="" style="" data-i18n="[placeholder]user_profile.work_phone" name="primary_w_phone_no" id="primary_w_phone_no" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li> -->
+  <li>
+    <div class="item-content item-title_inner">
+      <div class="item-inner translation-init">
+        <div class="item-title label " style="" data-i18n="user_profile.mobile"></div>
+        <div class="item-input">
+          <input type="tel" class="" style="" data-i18n="[placeholder]user_profile.mobile" name="primary_m_phone_no" id="primary_m_phone_no" placeholder="" />
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+        <!--<li>-->
+        <div id="image_display"></div>
+        <!--    <ul >-->
+        <!--        <li>-->
+        <div style="background-color:white;">
+          <div data-role="content">
+            <!-- <form method="post" id="file-attachment-form" action="http://healthrecordspro.com/upload.php" enctype="multipart/form-data"> -->
+            <form method="post" onsubmit="return uploadProfilePic()" id="file-attachment-form" enctype="multipart/form-data">
+              <div data-role="fieldcontain" class="field">
+                <!-- <label for="attachment">User Image</label> -->
+                <!-- <input type="file" name="attachment" id="attachment" /> -->
+                <div class="fileupload fileupload-new" data-provides="fileupload" style="overflow:hidden">
+                  <div style="width:100%;text-align:center;height:300px">
+                    <div class=" translation-init" style="">
+                      <p data-i18n="user_profile.profile_picture">
+                        <p>
+                    </div>
+                    <div class="row" style="background-image: url('img/Trees.png'); background-position:cover;">
+                      <div class="col-35">
+                      </div>
+                      <div class="col-40">
+                        <div class="fileupload-preview fileupload-exists thumbnail" id="user_img_display" style="max-width:200px; max-height: 200px;  line-height: 20px;">
+                        </div>
+                      </div>
+                      <div class="col-30"></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-50">
+                        <div class="image-upload">
+                          <label for="attachment">
+                            <img src="img/editz.png" style=" margin-top: 10px;width:35%;height:35%" />
+                          </label>
+                          <input style="visibility:hidden" type="file" class="inputfile" value="hello" name="attachment" id="attachment" />
+                        </div>
+                      </div>
+                      <div class="col-50" style="text-align:center">
+                        <img src="img/remove.png" style=" margin-top: 10px;width: 35%;" onclick="removeUserProfileImage();" />
+                      </div>
+                    </div>
+                    <input type="hidden" name="attachment_id" id="attachment_id" />
+                  </div>
+                </div>
+                <div data-role="fieldcontain" class="field">
+               
+                </div>
+            </form>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+

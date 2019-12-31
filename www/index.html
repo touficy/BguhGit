@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!--: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <link rel="stylesheet" type="text/css" href="css/index1.css" />
+    <link id="CssStyle" rel="stylesheet" href="css/framework7.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/framework7-icons.css">
+    <!-- <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <!-- Fullcalendar -->
+
+    <link rel="stylesheet" href="css/fullcalendar.css">
+    <link rel="stylesheet" href="css/fullcalendar.print.css" media="print">
+    <link rel='stylesheet' type='text/css' href='css/timepicki.css' />
+    <link rel='stylesheet' type='text/css' href='css/jquery.share.css' />
+    <link rel='stylesheet' type='text/css' id="lang-style" href='' />
+    <!-- <link rel="stylesheet" href="js/intl-tel-input-15.1.0/build/css/intlTelInput.css"> -->
+    <style>
+#ARE, #ARE1
+{
+    display:inline-block;
+}
+        .unhide-en {
+            display: none;
+        }
+        
+        .unhide-ar {
+            display: none;
+        }
+        
+        .center {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+    </style>
+    <!-- <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials.css" />
+         <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials-theme-flat.css" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.ui.touch.js"></script>
+    <!-- <script src="js/jquery-1.3.2.min.js"></script> -->
+    <script src="js/moment.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type='text/javascript' src='js/timepicki.js'></script>
+    <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>-->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script> -->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCFdFoT21Am-VLwJBhK__KIoeZswI7MrFA"></script>
+    <!-- <script type="text/javascript" src="googlemap.js"></script> -->
+    <script type="text/javascript" src="js/jquery.longpress.js"></script>
+    <script type="text/javascript" src="js/hammer.min.js"></script>
+    <!-- <script type="text/javascript" src="components/loader.js"></script> -->
+    <script src="js/Chart.js"></script>
+    <!-- FullCalendar -->
+    <script src="js/fullcalendar.min.js"></script>
+    <!-- <script type="text/javascript" src="js/my-app.js"></script> -->
+    <!-- File Uploader -->
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/bootstrap-fileupload.min.js"></script>
+    <!-- <script type="text/javascript" src="js/my-app.js"></script> -->
+
+    <script src="js/i18next.min.js"></script>
+    <script src="js/i18nextXHRBackend.min.js"></script>
+    <script src="js/jquery-i18next.min.js"></script>
+    <title>Login</title>
+</head>
+
+<body onload="onDeviceReady()" style="background-color:#4d7ab9;">
+	<!-- Status bar overlay for fullscreen mode-->
+	<script src="js/jquery.share.js"></script>
+	<div class="statusbar-overlay"></div>
+	<!-- Panels overlay-->
+	<div class="panel-overlay"></div>
+	<!-- Left panel with reveal effect-->
+	<!-- Right panel with cover effect-->
+	<div class="panel panel-right panel-cover translation-init">
+		<div class="list-block">
+			<ul style="height: 99vh;">  
+				  <li>
+                                        <a href="#" class="close-panel item-link" onclick="selectHomepageDisplay();">
+                                            <div class="item-content">
+                                                <div class="item-media white">
+                                                    <span class="homeimg"><img src="img/HOME.png" height="34"/></span>
+                                                </div>
+                                                <div class="item-inner">
+                                                    <div style="display: none" class="item-title white unhide-en">Home</div>
+                                                    <div style="display: none" class="item-title white unhide-jp">ホーム</div>
+                                                    <div style="display: none" class="item-title white unhide-sp">Casa</div>
+                                                    <div style="display: none" class="item-title white unhide-ru">Главная</div>
+                                                    <div style="display: none" class="item-title white unhide-fr">Accueil</div>
+                                                    <div style="display: none" class="item-title white unhide-ar">الرئيسية</div>                         
+                                                
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="close-panel item-link" href="user_profile.html" onclick="giveAlert();">
+                                            <div class="item-content">
+                                                <div class="item-media white">
+                                                    <span class="homeimg"><img src="img/USER-PROFILE.png" height="34"/></span>
+                                                </div>
+                                                <div class="item-inner">
+                                                    <div style="display: none" class="item-title white unhide-en">Profile</div>
+                                                    <div style="display: none" class="item-title white unhide-jp">プロフィール</div>
+                                                    <div style="display: none" class="item-title white unhide-sp">profil</div>
+                                                    <div style="display: none" class="item-title white unhide-ru">профиль</div>
+                                                    <div style="display: none" class="item-title white unhide-fr">profil</div>
+                                                    <div style="display: none" class="item-title white unhide-ar">الصفحة الشخصية</div> 
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+				<li>
+					<a class="close-panel item-link" href="report_bug.html">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/ABOUT-THIS-APP.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">Report a bug</div>
+								<div style="display: none" class="item-title white unhide-jp">バグを報告する</div>
+								<div style="display: none" class="item-title white unhide-sp">Reportar un error</div>
+								<div style="display: none" class="item-title white unhide-ru">Сообщить об ошибке</div>
+								<div style="display: none" class="item-title white unhide-fr">Signaler un bug</div>
+								<div style="display: none" class="item-title white unhide-ar">الإبلاغ عن خطأ</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a class="close-panel item-link" href="suggestions.html">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/ABOUT-THIS-APP.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">Suggestions</div>
+								<div style="display: none" class="item-title white unhide-jp">提案</div>
+								<div style="display: none" class="item-title white unhide-sp">Sugerencias</div>
+								<div style="display: none" class="item-title white unhide-ru">Предложения</div>
+								<div style="display: none" class="item-title white unhide-fr">Suggestions</div>
+								<div style="display: none" class="item-title white unhide-ar">اقتراحات</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a class="close-panel item-link" href="aboutus.html" onClick="getAboutData();">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/ABOUT-THIS-APP.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">About This App</div>
+								<div style="display: none" class="item-title white unhide-jp">このアプリについて</div>
+								<div style="display: none" class="item-title white unhide-sp">Acerca de esta aplicación</div>
+								<div style="display: none" class="item-title white unhide-ru">Об этом приложении</div>
+								<div style="display: none" class="item-title white unhide-fr">À propos de cette application</div>
+								<div style="display: none" class="item-title white unhide-ar">عن هذا التطبيق</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				
+				
+				
+				<li>
+					<a class="close-panel item-link" onClick="getFaq();" href="faq.html">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/FAQ.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">FAQ</div>
+								<div style="display: none" class="item-title white unhide-jp">よくある質問</div>
+								<div style="display: none" class="item-title white unhide-sp">Preguntas más frecuentes</div>
+								<div style="display: none" class="item-title white unhide-ru">Вопросы-Ответы</div>
+								<div style="display: none" class="item-title white unhide-fr">FAQ</div>
+								<div style="display: none" class="item-title white unhide-ar">الأسئلة الأكثر تكرارا</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<!-- <li>
+					<a class="close-panel item-link" onclick="getSectionsData();" href="section_preference.html">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><i class="fa fa-th-large" style="font-size:25px"></i></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">Sections Preferences</div>
+								<div style="display: none" class="item-title white unhide-jp">セクションの設定</div>
+								<div style="display: none" class="item-title white unhide-sp">Preferencias de secciones</div>
+								<div style="display: none" class="item-title white unhide-ru">Настройки разделов</div>
+								<div style="display: none" class="item-title white unhide-fr">Préférences des sections</div>
+								<div style="display: none" class="item-title white unhide-ar">تفضيلات الأقسام</div>
+							</div>
+						</div>
+					</a>
+				</li> -->
+				<!-- <li>
+					<a class="close-panel item-link"  href="settings.html">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/SETTINGS.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">Settings</div>
+								<div style="display: none" class="item-title white unhide-jp">設定</div>
+								<div style="display: none" class="item-title white unhide-sp">Configuraciones</div>
+								<div style="display: none" class="item-title white unhide-ru">настройки</div>
+								<div style="display: none" class="item-title white unhide-fr">Paramètres</div>
+								<div style="display: none" class="item-title white unhide-ar">إعدادات</div>
+							</div>
+						</div>
+					</a>
+				</li> -->
+				<li class="backToENg" style="display: none;">
+					<a class="close-panel item-link" onClick="" href="#">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/SETTINGS.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div onclick='metricksUpdate("en");' style="display: none" class="item-title white unhide-sp">Back To English</div>
+								<div onclick='metricksUpdate("en");' style="display: none" class="item-title white unhide-jp">Back To English</div>
+								<div onclick='metricksUpdate("en");' style="display: none" class="item-title white unhide-ru">Back To English</div>
+								<div onclick='metricksUpdate("en");' style="display: none" class="item-title white unhide-fr">Back To English</div>
+								<div onclick='metricksUpdate("en");' style="display: none" class="item-title white unhide-ar">Back To English</div>
+							</div>
+						</div>
+					</a>
+				</li>
+				<!-- <li>
+					<a class="close-panel item-link" href="contact.html">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/CONTACT-US.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">Contact Us</div>
+								<div style="display: none" class="item-title white unhide-jp">お問い合わせ</div>
+								<div style="display: none" class="item-title white unhide-sp">Contáctenos</div>
+								<div style="display: none" class="item-title white unhide-ru">Свяжитесь с нами</div>
+								<div style="display: none" class="item-title white unhide-fr">Contactez nous</div>
+								<div style="display: none" class="item-title white unhide-ar">اتصل بنا</div>
+							</div>
+						</div>
+					</a>
+				</li> -->
+				<li>
+					<a class="close-panel item-link" onClick="logout();" href="#">
+						<div class="item-content">
+							<div class="item-media white">
+								<span class="homeimg"><img src="img/LOGOUT.png" height="34"/></span>
+							</div>
+							<div class="item-inner">
+								<div style="display: none" class="item-title white unhide-en">Logout</div>
+								<div style="display: none" class="item-title white unhide-jp">ログアウト</div>
+								<div style="display: none" class="item-title white unhide-sp">Cerrar sesión</div>
+								<div style="display: none" class="item-title white unhide-ru">Выйти</div>
+								<div style="display: none" class="item-title white unhide-fr">Connectez - Out</div>
+								<div style="display: none" class="item-title white unhide-ar">تسجيل الخروج</div>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- ############################ for mobile tips code to slide from left ################################## -->
+	<div class="panel-overlay"></div>
+	<div class="panel panel-left panel-reveal">
+		<div class="content-block">
+			<div class="content-block-title" style="font-size: 27px;">Useful Tips</div>
+			<div class="list-block">
+				<ul id="usefultips_mobile" style="background-color: #D9D9D9;">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="views">
+		<div class="view view-main">
+			<div class="navbar" style="background-color:#4d7ab9;border-bottom:none;">
+				<div class="navbar-inner">
+					<div class="left">
+
+					</div>
+					<div class="center">
+
+					</div>
+					<div class="right">
+
+					</div>
+				</div>
+			</div>
+			<div class="pages navbar-through toolbar-fixed">
+
+                <div data-page="index" class="page navbar-fixed toolbar-fixed" style="background-color: #4d7ab9;">
+                    <div id="logo" style="background-color:#4d7ab9;padding-top:100px;">
+                        <div class="center"><img class="logo1" src="img/logosplash.png" width="200px">
+                        </div>
+                    </div>
+                    <div class="Login" style="background-color:#4d7ab9;padding-bottom:50px;">
+
+                        <div class="center" style="background-color:#4d7ab9; text-align: center">
+                            <input type="text" style="height:25px;font-size:15px;display: block;font-weight:800" name="user_email" required value="" id="user_email" placeholder="Username " />
+                            <li style="list-style: none;">
+                                <p style=" font-size: 16px;"><span id="email_error"></span></p>
+                            </li>
+                            <input type="password" style="height:25px;font-size:15px;display: block;font-weight:800" name="user_password" required value="" id="user_password" class="" placeholder="password" />
+                            <li style="list-style: none;">
+                                <p style=" font-size: 1em;"><span id="password_error"></span></p>
+                            </li>
+                            <input type="button" name="submit" style="display: block;width:auto;" onClick="loginsubmit();" value="Login" class="myButton" />
+                           
+                        </div> 
+                    </div>
+                    <div class="signup" style="background-color:#4d7ab9;">
+                        <span id="loginpage"></span>
+                        <div style="text-align: center">
+                         <div id="ARE1">     <a href="NeedHEelp.html" onClick="contactus()" class="need_help">Need Help?</a> </div>
+                          
+                        </div>
+                        <!-- <a href="select_lang.html" class="" style="text-align: center;margin: 20px 0px;">Select Languages</a> -->
+                         <p style="text-align: center;margin: 20px 0px ; color : white" id="version_num" ></p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+    </div>
+    <!-- <script type="text/javascript" src="components/loader.js"></script> -->
+    <!-- <script type="text/javascript" src="js/my-app.js"></script> -->
+    <!-- <script src="js/intl-tel-input-15.1.0/build/js/intlTelInput.js"></script> -->
+    <!-- <script type="text/javascript" src="js/SocialSharing.js"></script>
+    <script type="text/javascript" src="scanMedia.js"></script> -->
+    <script type="text/javascript" src="js/Calendar.js"></script>
+    <!-- <script type="text/javascript" src="js/my-app.js"></script> -->
+
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <!-- <script type="text/javascript" src="components/loader.js"></script> -->
+    <script src="js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/mainfunc.js"></script>
+    <!-- <script type="text/javascript" src="js/Calendar.js"></script> -->
+    <!-- <script type="text/javascript" src="scanMedia.js"></script> -->
+    <!-- <script type="text/javascript" src="js/mainfunc.js"></script> -->
+    <!-- <script type="text/javascript" src="js/Calendar.js"></script> -->
+   <!-- <script type="text/javascript" src="js/dataentry.js"></script>  --> 
+
+    
+ 
+    <!-- <script type="text/javascript" src="components/loader.js"></script> -->
+
+<script>
+	        console.log("Lang is : " + localStorage.getItem("lang"));
+			if (localStorage.getItem("lang") == 'ar') {
+                $('.list-block').css("direction","rtl")
+
+                // $('#CssStyle').attr("href" , "css/framework7.rtl.min.css")
+        $$('#user_email').attr('placeholder', 'اسم المستخدم أو البريد الالكتروني');
+        $$("#user_password").attr('placeholder', 'كلمة مرور المستخدم');
+        $$('.myButton').attr('value', 'تسجيل الدخول');
+        $$('.lang_title').html('اللغة');
+        $$('.lang_list').css('direction', 'rtl');
+        $$('#language_select').val('ar');
+        $$('.forget_pass').html('هل نسيت كلمة المرور');
+        $$('.sign_up').html('سجل');
+        $$('.need_help').html('تحتاج مساعدة؟');
+        $$('.privacy_pol').html('<u>سياسة الخصوصية</u>');
+    } else if (localStorage.getItem("lang") == 'fr') {
+        $$('.myButton').attr('value', "S'identifier");
+        $$('#user_email').attr('placeholder', "Nom d'utilisateur ou email");
+        $$("#user_password").attr('placeholder', "Mot de passe de l'utilisateur");
+        $$('.lang_title').html('la langue');
+        $$('.lang_list').css('direction', 'ltr');
+        $$('#language_select').val('fr');
+        $$('.forget_pass').html('Mot de passe oublié');
+        $$('.sign_up').html("s'inscrire");
+        $$('.need_help').html("Besoin d'aide pour?");
+        $$('.privacy_pol').html('<u>Politique de confidentialité</u>');
+
+    } else if (localStorage.getItem("lang") == 'sp') {
+        $$('.myButton').attr('value', "Iniciar sesión");
+        $$("#user_password").attr('placeholder', "Contraseña de usuario");
+        $$('#user_email').attr('placeholder', 'Nombre de usuario o correo electrónico');
+        $$('.lang_title').html('idioma');
+        $$('.lang_list').css('direction', 'ltr');
+        $$('#language_select').val('sp');
+        $$('.forget_pass').html('Se te olvidó tu contraseña');
+        $$('.sign_up').html('Regístrate');
+        $$('.need_help').html("Necesitas ayuda?");
+        $$('.privacy_pol').html('Política de privacidad');
+
+    } else if (localStorage.getItem("lang") == 'ru') {
+        $$('.myButton').attr('value', "Авторизоваться");
+        $$("#user_password").attr('placeholder', "Пользовательский пароль");
+        $$('#user_email').attr('placeholder', 'Имя пользователя или адрес электронной почты');
+        $$('.lang_title').html('язык');
+        $$('.lang_list').css('direction', 'ltr');
+        $$('#language_select').val('ru');
+        $$('.forget_pass').html('Забыли пароль');
+        $$('.sign_up').html('Зарегистрироваться');
+        $$('.need_help').html("Нужна помощь?");
+        $$('.privacy_pol').html('политика конфиденциальности');
+
+    } else if (localStorage.getItem("lang") == 'en') {
+        $$('.myButton').attr('value', "Login");
+        $$("#user_password").attr('placeholder', "User password");
+        $$('#user_email').attr('placeholder', 'Username or email');
+        $$('.lang_title').html('language');
+        $$('.lang_list').css('direction', 'ltr');
+        $$('#language_select').val('en');
+        $$('.forget_pass').html('Forgot Password');
+        $$('.sign_up').html('sign up');
+        $$('.need_help').html("Need Help?");
+        $$('.privacy_pol').html('Privacy Policy');
+        $('#CssStyle').attr("href" , "css/framework7.min.css")
+
+
+    } else if (localStorage.getItem("lang") == 'jp') {
+        $$('.myButton').attr('value', "ログイン");
+        $$("#user_password").attr('placeholder', "ユーザーパスワード");
+        $$('#user_email').attr('placeholder', 'ユーザー名または電子メール');
+        $$('.lang_title').html('言語');
+        $$('.lang_list').css('direction', 'ltr');
+        $$('#language_select').val('jp');
+        $$('.forget_pass').html('パスワードを忘れましたか？');
+        $$('.sign_up').html('申し込む');
+        $$('.need_help').html("助けが必要ですか？");
+        $$('.privacy_pol').html('プライバシーポリシー');
+
+	}
+	    // CheckLocalStorage();
+
+
+// select_lang()
+</script>
+    <script src="https://use.fontawesome.com/641d5659eb.js"></script>
+
+    <!-- <script type="text/javascript" src="components/loader.js"></script> -->
+    <!-- <script type="text/javascript" src="js/pcamera.js"></script> -->
+
+<!-- <script type="text/javascript" src="js/SocialSharing.js"></script>
+<script type="text/javascript" src="scanMedia.js"></script> -->
+
+</body>
+
+</html>

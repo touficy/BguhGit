@@ -1,0 +1,62 @@
+.unhide-ar{
+    display:block !important;
+}
+
+.unhide-ar-inline{
+    display:inline !important;
+}
+
+.unhide-ar-table-cell{
+    display:table-cell !important;
+}
+
+.arabic{
+    direction: rtl;
+}
+
+.right{
+    float: right !important;
+}
+
+.left{
+    float: left !important;
+}
+
+.blog-categories .labe_rs11 a, 
+.blog-categories .labe_rs16 a,
+.blog-categories .labe_rs28 a,
+.blog-categories .labe_rs66 a,
+.blog-categories .labe_rs42 a{
+    background-position: left;
+}
+
+th,
+td{
+    text-align: center
+}
+
+table{
+    direction: rtl
+}
+
+.li:after{
+    position: absolute;
+    right: 0px;   
+}
+
+input, textArea{
+    direction: rtl;
+}
+
+#doc_apoint_phyname{
+    float:right
+}
+
+.fa-sort-desc{
+    left: 8px;
+    right: auto!important
+}
+
+.center-button{
+    padding-top: 30%;
+}

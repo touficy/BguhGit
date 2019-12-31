@@ -1,0 +1,74 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="display: none" class="center sliding white unhide-en" >Medications</div>
+        <div style="display: none" class="center sliding white unhide-sp" >Medicamentos</div>
+        <div style="display: none" class="center sliding white unhide-ru" >лекарственные препараты</div>
+        <div style="display: none" class="center sliding white unhide-fr" >Médicaments</div>
+        <div style="display: none" class="center sliding white unhide-ar" >الأدوية</div>
+        <div class="right theme-white searchicon" >
+            <a href="searchMedic.html"  class="link icon-only" onclick=""><i class="fa fa fa-search" style="font-size:20px"></i></a>
+            <a href="#" onclick="MedicationListinfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div> 
+<div class="pages navbar-through">
+    <div data-page="medications_listing" class="page" >
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="page-content">
+                <div class="content-block">
+                    <div class="buttons-row">
+                        <a style="display: none"  href="#tab1" class="tab-link active button unhide-en" >Current</a>
+                        <a style="display: none"  href="#tab1" class="tab-link active button unhide-sp" >Corriente</a>
+                        <a style="display: none"  href="#tab1" class="tab-link active button unhide-ru" >Текущий</a>
+                        <a style="display: none"  href="#tab1" class="tab-link active button unhide-fr" >Actuel</a>
+                        <a style="display: none"  href="#tab1" class="tab-link active button unhide-ar" >الحالى</a>
+                        <a style="display: none" href="#tab2"  class="tab-link button unhide-en">Previous</a>
+                        <a style="display: none" href="#tab2"  class="tab-link button unhide-sp">Anterior</a>
+                        <a style="display: none" href="#tab2"  class="tab-link button unhide-ru">предыдущий</a>
+                        <a style="display: none" href="#tab2"  class="tab-link button unhide-fr">précédent</a>
+                        <a style="display: none" href="#tab2"  class="tab-link button unhide-ar">السابق</a>
+                    </div>
+                </div>
+                <div class="tabs">
+                    <div id="tab1" class="tab active" >
+                        <div class="list-block" style="margin-bottom:130px;" id="medications">
+                            <ul >
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab" >
+                        <div class="content-block">
+                            <div class="list-block" id="medications1">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+            <div class="toolbar-inner" style="background:#4d7ab9;">
+                <a href="medications.html" onclick="medicationAdd();" class="link icon-only unhide-en btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>Add New</a>
+                <a href="medications.html" onclick="medicationAdd();" class="link icon-only unhide-sp btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>Agregar nuevo</a>
+                <a href="medications.html" onclick="medicationAdd();" class="link icon-only unhide-ru btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>Добавить новое</a>
+                <a href="medications.html" onclick="medicationAdd();" class="link icon-only unhide-fr btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>
+                    Ajouter un nouveau</a>
+                <a href="medications.html" onclick="medicationAdd();" class="link icon-only unhide-ar btn_style" style="color:white;border-right:1px white solid;display: none;text-align: center;"><i class="fa fa-plus-circle"></i>
+                    إضافة جديد</a>
+                <a href="manage_albums.html" onclick="manage_albums(22, 'Medications');" class="link icon-only unhide-en btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-file-image-o"></i>Manage Images</a>
+                <a href="manage_albums.html" onclick="manage_albums(22, 'Medications');" class="link icon-only unhide-sp btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-file-image-o"></i>Administrar imágenes</a>
+                <a href="manage_albums.html" onclick="manage_albums(22, 'Medications');" class="link icon-only unhide-ru btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-file-image-o"></i>Управление изображениями</a>
+                <a href="manage_albums.html" onclick="manage_albums(22, 'Medications');" class="link icon-only unhide-fr btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-file-image-o"></i>
+                    Gérer les images</a>
+                <a href="manage_albums.html" onclick="manage_albums(22, 'Medications');" class="link icon-only unhide-ar btn_style" style="color:white;border-right:1px white solid;display: none;"><i class="fa fa-file-image-o"></i>
+                    إدارة الصور</a>
+            </div>
+        </div>
+    </div>
+</div>

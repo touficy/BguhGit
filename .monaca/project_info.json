@@ -1,0 +1,16 @@
+{
+    "cordova_version": "7.1",
+    "framework_version": "3.5",
+    "xcode_version": "10.1",
+    "title-ja": "",
+    "title-en": "",
+    "description-ja": "",
+    "description-en": "",
+    "category": "User Template",
+    "platform": [
+        "android",
+        "ios",
+        "chrome"
+    ],
+    "name": "generated-1526911813-5ad752a8e78885ad5f8b4567"
+}

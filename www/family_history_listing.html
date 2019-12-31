@@ -1,0 +1,65 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white unhide-en" style="display: none">Family History</div>
+        <div class="center sliding white unhide-sp" style="display: none">Historia familiar</div>
+        <div class="center sliding white unhide-ru" style="display: none">История семьи</div>
+        <div class="center sliding white unhide-fr" style="display: none">Histoire de famille</div>
+        <div class="center sliding white unhide-ar" style="display: none">تاريخ العائلة</div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="FamilyhistoryInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="family_history_listing" class="page arabic">
+        <div class="page-content" style="background-color:#ffffff;margin-top: 10px;">
+            <div class="list-block">
+                <ul>
+                    <li>
+                        <a href="family_his_listing1.html" class="item-link" onclick="getFamilyhisData();">
+                            <div class="item-content white">
+                                <div class="item-inner">
+                                    <!-- Select label -->
+                                    <div class="item-title unhide-en" style="display: none">Family Medical Condition </div>
+                                    <div class="item-title unhide-sp" style="display: none">Condición médica familiar </div>
+                                    <div class="item-title unhide-ru" style="display: none">Семейное медицинское состояние </div>
+                                    <div class="item-title unhide-fr" style="display: none">Condition médicales familiales </div>
+                                    <div class="item-title unhide-ar" style="display: none">الحالة الطبية للعائلة </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="family_causesof_death_listing.html" class="item-link" onclick="getFamilyCauseDeathData();">
+                            <div class="item-content white">
+                                <div class="item-inner">
+                                    <!-- Select label -->
+                                    <div class="item-title unhide-en" style="display: none">Family Cause of Death</div>
+                                    <div class="item-title unhide-sp" style="display: none">Causa familiar de la muerte</div>
+                                    <div class="item-title unhide-ru" style="display: none">Семейная причина смерти</div>
+                                    <div class="item-title unhide-fr" style="display: none">Cause de décès familiale</div>
+                                    <div class="item-title unhide-ar" style="display: none">سبب موت الأسرة</div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9; height: 59px;">
+
+            <a href="manage_albums.html" onclick="manage_albums(30,'Family History');" class="link icon-only unhide-en" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Manage Images</a>
+            <a href="manage_albums.html" onclick="manage_albums(30,'Family History');" class="link icon-only unhide-sp" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Administrar imágenes</a>
+            <a href="manage_albums.html" onclick="manage_albums(30,'Family History');" class="link icon-only unhide-ru" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Управление изображениями</a>
+            <a href="manage_albums.html" onclick="manage_albums(30,'Family History');" class="link icon-only unhide-fr" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Gérer les images</a>
+            <a href="manage_albums.html" onclick="manage_albums(30,'Family History');" class="link icon-only unhide-ar" style="color:white;display: none"><i class="fa fa-file-image-o"></i>إدارة الصور</a>
+
+        </div>
+    </div>
+</div>

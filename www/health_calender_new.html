@@ -1,0 +1,35 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding">
+            <a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i>
+            </a>
+        </div>
+        <div class="center sliding white"></div>
+        <div class="right theme-white searchicon" >
+            <a href="medications.html" onclick="medicationAdd()" class="link icon-only"><i class="fa fa-plus" style="font-size:20px"></i></a>
+            <a href="#" onclick="healthcalendarmediactionInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through" style="background-color: antiquewhite;">
+    <div data-page="health_calender_new" class="page" style="padding-top: 64px;margin-bottom:55px; overflow: scroll;">
+        <div class="content-block-title arabic translation-init" style="text-align:-webkit-center; font-size: 13px; align:center;" data-i18n="health_calendar.medications_calendar"></div>
+        <div class="content-block" style="text-align: -webkit-center;">
+            <div style="padding:0;margin: auto; align=center; text-align: center;" class="content-block-inner">
+                <div id="CalendarPlace">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        calendarM()
+    </script>
+    <script type="text/javascript" src="js/Calendar.js"></script>
+</div>

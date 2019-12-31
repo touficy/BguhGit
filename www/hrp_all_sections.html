@@ -1,0 +1,191 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><img class="logo" src="img/logosplash.png" style="height: 36px;">
+        </div>
+        <div class="right theme-white searchicon" >
+           <!-- <div class="theme-white" >
+                <a href="#" class="link icon-only" id="lang-out" onclick="changeLang()">en</a>
+            </div>-->
+            <!-- <a href="#" class="link icon-only" onclick="openSearchPopUp()"> <i class="fa fa-search" style="font-size:20px"></i>
+            </a>
+            <div class="theme-white" >
+                <a href="#" class="link icon-only" id="" onclick="homeActiosheet()"><i class="fa fa-plus" style="font-size:20px"></i></a>
+            </div>
+            <div class="theme-white" >
+                <a href="playaudio_page.html" class="link icon-only" id="audio_track_start" ><i class="fa fa-bell-o" style="font-size:20px"></i></a>
+            </div> -->
+            <div class="theme-white" >
+                <a href="#" class="link icon-only" onclick="emergencyContactsDis();"><i class="fa fa-mobile" style="font-size:26px"></i></a>
+            </div>
+            <div class="theme-white" >
+                <a href="maps.html" class="link icon-only" id="mapId" onclick="findMyLocation();"><i class="fa fa-map-marker" style="font-size:20px"></i></a>
+            </div>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- <div class="navbar">
+   <div class="navbar-inner">
+     <div class="left sliding"><a href="#" class="back link"><i class="icon icon-back"></i><i class="icon icon-back"></i></a></div>
+     <div class="center sliding white" style="margin-right: 100px;">All Sections</div>
+     <div class="right theme-white searchicon" >
+        <a href="#" onclick="MobileAppInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+      </div>
+      <div class="right theme-white navicon" >
+        <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+      </div>
+   </div>
+ </div> -->
+
+<div class="pages navbar-through">
+    <div data-page="hrp_all_sections" class="page">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="content-block" style=" padding-top: 24px;" >
+                <div class="row" id="sections_displayGridView" style="float: left;margin: 5px;text-align: center;width: 96%;">
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="user_profile.html" class="item-link" onclick="giveAlert();"><img src="img/USER-PROFILE.png" height="70">
+                            <div class="ProfileSection">profile</div>
+                        </a>
+                    </div>
+                    <!-- <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="display_all_images.html" class="item-link" onclick="allalbumimages();"><img src="img/Manage-Media-Albums.png" height="70">
+                            <div>Manage all images</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="self_moni_listing_new.html" class="item-link" onclick="selfDataMetrics()"><img src="img/SELF-MONITORING-CHARTS.png" height="70">
+                            <div>Self-Monitoring Charts</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="health_calender.html" class="item-link" onclick=""><img src="img/_Health-Calendar.png" height="70">
+                            <div>Health Calendar</div>
+                        </a>
+                    </div> -->
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="emergency_contact_listing.html" class="item-link" onclick=""><img src="img/_Emergency-Contacts.png" height="70">
+                            <div class="EmergencySection">Emergency Contacts</div>
+                        </a>
+                    </div>
+                    <!-- <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="health_provider_listing.html" class="item-link" onclick=""><img src="img/Physicians-&amp;-Therapist.png" height="70">
+                            <div>Physicians &amp; Therapists</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="insurance.html" class="item-link" onclick=""><img src="img/_Health-Insurance-.png" height="70">
+                            <div>Health Insurance</div>
+                        </a>
+                    </div> -->
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="doctors_appoin_listing.html" class="item-link" ><img src="img/doctors-calendar.png" height="70">
+                            <div class="AppointmentsSection"> Doctors’ Appointments</div>
+                        </a>
+                    </div>
+                    <!-- <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="medications_listing.html" class="item-link" onclick=""><img src="img/MEDICATIONS.png" height="70">
+                            <div>Medications</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="medical_history_condi_listing.html" class="item-link" onclick=""><img src="img/medical-history.png" height="70">
+                            <div>Medical History</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="allergies_listing.html" class="item-link" onclick=""><img src="img/ALLERGIES.png" height="70">
+                            <div>Allergies</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="immunization_listing.html" class="item-link" onclick="getimmuData()"><img src="img/IMMUNIZATIONS.png" height="70">
+                            <div>Immunizations</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="surgeries_listing.html" class="item-link" onclick=""><img src="img/SURGERIES.png" height="70">
+                            <div>Hospitalizations</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="surgeries_listing.html" class="item-link" onclick=""><img src="img/Hospitalizations-&amp;-Surgeries.png" height="70">
+                            <div>Hospitalizations &amp; Surgeries</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="family_history_listing.html" class="item-link" onclick=""><img src="img/FAMILY-HISTORY.png" height="70">
+                            <div>Family History</div>
+                        </a>
+                    </div> -->
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="lab_results_main.html" class="item-link" ><img src="img/Lab-Results-and-Radiology.png" height="70">
+                            <div class="LabResultSection">Lab Results &amp; Radiology</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="News.html" class="item-link" ><img src="img/ABOUT-THIS-APP.png" height="70">
+                            <div class="News">News</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="NeedHEelp.html" class=" item-link" ><img src="img/Lab-Results-and-Radiology.png" height="70">
+                            <div class="need_help"> </div>
+                        </a>
+                    </div>
+                    <!-- <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="women_section_main.html" class="item-link" onclick=""><img src="img/Womens-Section.png" height="70">
+                            <div>Women’s section</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="dental_history_listing.html" class="item-link" onclick=""><img src="img/Dental-History.png" height="70">
+                            <div>Dental History</div>
+                        </a>
+                    </div>
+
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="nutrition_diet_practise.html" class="item-link" onclick=""><img src="img/Nutrition-&amp;-Diet-Practices.png" height="70">
+                            <div>Nutrition and Diet Practices</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="implants_medicaldevices_listing.html" class="item-link" onclick="getImplantsAndMediData()"><img src="img/implants.png" height="70">
+                            <div>Implants/Medical Devices</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="medicalandlega_directives_listing.html" class="item-link" onclick=""><img src="img/_Medical-&amp;-Legal-Directives-.png" height="70">
+                            <div>Medical and Legal Directives</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="manage_albums.html" class="item-link" onclick="manage_albums(6,'Doctors Prescriptions')"><img src="img/Doctors-prescriptions-.png" height="70">
+                            <div>Doctors Prescriptions</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="manage_media_albums.html" class="item-link" onclick="getMediaAlbums()"><img src="img/Manage-Media-Albums.png" height="70">
+                            <div>Manage media albums</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="doctors_counsalting_main.html" class="item-link" onclick=""><img src="img/doc-consultation.png" height="70">
+                            <div>Doctors Consultations</div>
+                        </a>
+                    </div>
+                    <div class="col-50 tablet-33" style="background-color: #4d7ab9; ">
+                        <a href="health_summary.html" class="item-link" onclick=""><img src="img/Health-Summaries-.png" height="70">
+                            <div>Health Summary</div>
+                        </a>
+                    </div> -->
+                    
+                </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>

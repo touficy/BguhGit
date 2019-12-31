@@ -1,0 +1,141 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white translation-init" data-i18n="register.signup"></div>
+        <div class="right theme-white navicon"></div>
+    </div>
+</div>
+<div class="pages navbar-through">
+    <div data-page="form" class="page">
+        <div style="overflow-y:scroll; height:inherit">
+            <!--<div class="content-block-title" style="padding-top: 64px;font-size:18px;">Sign Up</div>-->
+            <div class="list-block" style="margin-bottom: 70px; margin-top: 60px;">
+                <ul style="background-color:#FFFFFF;" class="arabic">
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.fname"></div>
+                                <div class="item-input">
+                                    <input type="text" name="first_name" class="translation-init" data-i18n="register.fname" id="first_name" placeholder="First name" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.lname"></div>
+                                <div class="item-input">
+                                    <input type="text" name="last_name" class="translation-init" data-i18n="register.lname" id="last_name" placeholder="Last name" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.email"></div>
+                                <div class="item-input">
+                                    <input type="text" name="e_mail" class="translation-init" data-i18n="register.email" id="e_mail" placeholder="E-Mail" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label unhide-en" style="display: none">Gender</div>
+                                <div class="item-title label unhide-fr" style="display: none">Le genre</div>
+                                <div class="item-title label unhide-ar" style="display: none">جنس</div>
+                                <label class="label-radio item-content">
+                                    <input type="radio" name="gender" id="radio" value="male" onClick="getResults(this)">
+                                    <div class="item-inner">
+                                        <div class="item-title unhide-en" style="display: none">Male</div>
+                                        <div class="item-title unhide-fr" style="display: none">Mâle</div>
+                                        <div class="item-title unhide-ar" style="display: none">ذكر</div>
+                                    </div>
+                                </label>
+                                <label class="label-radio item-content">
+                                    <input type="radio" name="gender" value="female" onClick="getResults(this)">
+                                    <div class="item-inner">
+                                        <div class="item-title unhide-en" style="display: none">Female</div>
+                                        <div class="item-title unhide-fr" style="display: none">Femelle</div>
+                                        <div class="item-title unhide-ar" style="display: none">أنثى</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.dob"></div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="DOB" class="translation-init" data-i18n="register.dob" readonly id="picker-date">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- <div id="picker-date-container"></div> -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.country"></div>
+                                <div class="item-input" id="addcountries">
+                                    <input type="text" name="form_country" class="translation-init" data-i18n="register.country" placeholder="Select Name" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.uname"></div>
+                                <div class="item-input">
+                                    <input type="text" name="u_username" class="translation-init" data-i18n="register.uname" id="u_username" placeholder="Username" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label translation-init" data-i18n="register.pass"></div>
+                                <div class="item-input">
+                                    <input type="password" name="u_password" class="translation-init" data-i18n="register.pass" id="u_password" placeholder="Password" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-input" style="height: 77px;padding: 10px;">
+                                <label class="label-checkbox item-content">
+                                    <input type="checkbox" name="my-checkbox" id="check" value="">
+                                    <div class="item-media">
+                                        <i class="icon icon-form-checkbox"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <div class="item-title "style="margin-top: 11px; color: black;">&nbsp;&nbsp;
+                                            <span class="translation-init" data-i18n="register.iaccept"></span >
+                                               <u>
+                                                    <a href="TermsConditionsPage.html" class="translation-init" data-i18n="register.terms_cond" style="color:black" onclick="terms()"></a>
+                                                </u>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9; height: 59px;">
+            <div class="toolbar-inner" style="background:#4d7ab9">
+                <a href="#" onclick="registerformSubmit();" class="link icon-only translation-init" data-i18n="register.submit" style="color:white;border-right:1px white solid;"></a>
+                <a href="index.html" class="link icon-only translation-init" data-i18n="register.cancel" style="color:white;"></a>
+            </div>
+        </div>
+    </div>
+</div>

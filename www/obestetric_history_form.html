@@ -1,0 +1,164 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white translation-init " style="" data-i18n="obestetric_history_form.title"></div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="MobileAppInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="obestetric_history_form" class="page arabic">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="list-block" style="padding-top: 43px;margin-bottom: 70px;">
+                <ul style="background-color:#FFFFFF">
+                    <li>
+                        <div class="item-content">
+                            <div class="item-input">
+                                <label class="label-checkbox item-content">
+	                                <input type="checkbox" name="obe_his_check" id="obe_his_check" value="0" onClick="getResults7(this)" >
+	                              		<div class="item-media">
+	                              			<i class="icon icon-form-checkbox"></i>
+	                               		</div>
+	                               	<div class="item-inner">
+	                                	<div class="item-title translation-init " style="" data-i18n="obestetric_history_form.Pregnant"></div>
+	                               </div>
+	                             </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.Delivery"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]obestetric_history_form.Delivery" name="obe_his_date" id="obe_his_date" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.Gestation"></div>
+                                <div class="item-input">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]obestetric_history_form.Gestation" name="obe_his_now" id="obe_his_now" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.labor"></div>
+                                <div class="item-input">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]obestetric_history_form.labor" name="obe_his_lbln" id="obe_his_lbln" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.Baby"></div>
+                                <div class="item-input">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]obestetric_history_form.Baby" name="obe_his_babw" id="obe_his_babw" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.sex"></div>
+                                <div class="item-input">
+                                    <i class="fa fa-sort-desc" style="float:right;font-size: 30px;position: absolute;right: 6px;"></i>
+                                    <select name="obe_his_sex" id="obe_his_sex">
+                                        <option class="" style="" data-i18n="obestetric_history_form.select"></option>
+                                        <option class="" style="" value="Male" data-i18n="obestetric_history_form.male">Male</option>
+                                        <option class="" style="" value="Female" data-i18n="obestetric_history_form.female">Female</option>
+					               </select>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.type"></div>
+                                <div class="item-input">
+                                    <input type="radio" name="radio" id="obe_his_dt" value="0"><span data-i18n="obestetric_history_form.Vag">Vag</span>
+                                    <input type="radio" name="radio" id="obe_his_dt1" value="1"><span data-i18n="obestetric_history_form.C/S">C/S</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.Epidural"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]obestetric_history_form.Epidural" name="obe_his_epi" id="obe_his_epi" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.name"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]obestetric_history_form.name" name="obe_his_name" id="obe_his_name" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text7">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="obestetric_history_form.Comments"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]obestetric_history_form.Comments" name="obe_his_cmts" id="obe_his_cmts" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <input type="hidden" name="obe_his_update" id="obe_his_update" placeholder="id">
+            </div>
+        </div>
+        <!-- 		<div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+    <div class="toolbar-inner" style="background:#4d7ab9;">
+      <a href="#" onclick="obestericformSubmit();" class="link icon-only" style="color:white;border-right:1px white solid ">Submit</a>
+      <a href="loginnormal.html"  class="link icon-only" style="color:white">Cancel</a>
+    </div>
+  </div> -->
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="obestric_inbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="obestericformSubmit();" style="color:white;border-right:1px white solid;" data-i18n="general.update"></a>
+                <a href="#" onclick="deleteobestetricHis();" class="link icon-only " style="color:white;" data-i18n="general.delete"></a>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="obestric_upbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="obestericformSubmit();" style="color:white;border-right:1px white solid;" data-i18n="general.submit"></a>
+                <a href="loginnormal.html" class="link icon-only " style="color:white;" data-i18n="general.cancel"></a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="display: none" class="center sliding white unhide-en" >CHARTS</div>
+        <div style="display: none" class="center sliding white unhide-sp" >CARTAS</div>
+        <div style="display: none" class="center sliding white unhide-ru" >СХЕМЫ</div>
+        <div style="display: none" class="center sliding white unhide-fr" >GRAPHIQUES</div>
+        <div style="display: none" class="center sliding white unhide-ar" >الرسوم البيانية</div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="MobileAppInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="self_height_chart" class="page" >
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="charts">
+                <div class="content-block content-block1" style="position: relative">
+                    <p id="axistitle" class="unhide-en" style = "-moz-transform: rotate(-90deg);bottom: 20%;left: -35px; position: absolute;font-size:.9em;display: none">Height in feet</p>
+                    <p id="axistitle" class="unhide-sp" style = "-moz-transform: rotate(-90deg);bottom: 20%;left: -35px; position: absolute;font-size:.9em;display: none">Altura en pies</p>
+                    <p id="axistitle" class="unhide-ru" style = "-moz-transform: rotate(-90deg);bottom: 20%;left: -35px; position: absolute;font-size:.9em;display: none">Высота в футах</p>
+                    <p id="axistitle" class="unhide-fr" style = "-moz-transform: rotate(-90deg);bottom: 20%;left: -35px; position: absolute;font-size:.9em;display: none">Hauteur en pieds</p>
+                    <p id="axistitle" class="unhide-ar" style = "-moz-transform: rotate(-90deg);bottom: 20%;left: -35px; position: absolute;font-size:.9em;display: none">الارتفاع بالقدم</p>
+                    <div style="width: 80%;">
+                        <div id="test" style="">
+
+                            <canvas id="canvas_height" height="450" width="600" style="border: 1px solid;float: right"></canvas>
+                        </div>
+                    </div>
+                    <p id="self_Test_name"></p>
+                    <!-- <p>
+                            <a href="#" style="color:black;float:right;margin-right: -13px; margin-top: -23px;" class="close-popup">
+                                    <i class="fa fa-times-circle fa-2x" ></i>
+                            </a>
+                    </p> -->
+                </div>
+            </div>
+            <div>
+                <table style="width:100%;" class="arabic">
+                    <thead>
+                        <tr>
+                            <th style="display: none" class="unhide-en-table-cell">Date</th>
+                            <th style="display: none" class="unhide-sp-table-cell">Fecha</th>
+                            <th style="display: none" class="unhide-ru-table-cell">Дата</th>
+                            <th style="display: none" class="unhide-fr-table-cell">Date</th>
+                            <th style="display: none" class="unhide-ar-table-cell">التاريخ</th>
+                            <th id="self_Test_name_otrs"></th>
+                        </tr>
+                    </thead>
+                    <tbody id="table_height">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

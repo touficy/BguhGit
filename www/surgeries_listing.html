@@ -1,0 +1,41 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="display: none" class="center sliding white unhide-en">Hospitalization & Surgeries</div>
+        <div style="display: none" class="center sliding white unhide-sp">Hospitalización y Cirugías</div>
+        <div style="display: none" class="center sliding white unhide-ru">Госпитализация и хирургия</div>
+        <div style="display: none" class="center sliding white unhide-fr">Hospitalisation et chirurgies</div>
+        <div style="display: none" class="center sliding white unhide-ar">العلاج في المستشفيات و الجراحات</div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="SurgeriesInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="surgeries_listing" class="page">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="list-block" style="padding-top:59px;" id="surgeriesd">
+
+            </div>
+            <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9; height: 59px;">
+                <div class="toolbar-inner" style="background:#4d7ab9;">
+                    <a href="surgeries.html" onclick="surgeriesAdd();" class="link icon-only unhide-en btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>Add New</a>
+                    <a href="surgeries.html" onclick="surgeriesAdd();" class="link icon-only unhide-sp btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>Agregar nuevo</a>
+                    <a href="surgeries.html" onclick="surgeriesAdd();" class="link icon-only unhide-ru btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>Добавить новое</a>
+                    <a href="surgeries.html" onclick="surgeriesAdd();" class="link icon-only unhide-fr btn_style" style="color:white;border-right:1px white solid;display: none"><i class="fa fa-plus-circle"></i>
+                            Ajouter un nouveau</a>
+                    <a href="surgeries.html" onclick="surgeriesAdd();" class="link icon-only unhide-ar btn_style" style="color:white;border-right:1px white solid;display: none;text-align: center;"><i class="fa fa-plus-circle"></i>
+                            إضافة جديد</a>
+                    <a href="manage_albums.html" onclick="manage_albums(14, 'Hospitalizations And Surgeries');" class="link icon-only unhide-en center-button btn_style" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Manage Images</a>
+                    <a href="manage_albums.html" onclick="manage_albums(14, 'Hospitalizations And Surgeries');" class="link icon-only unhide-sp center-button btn_style" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Administrar imágenes</a>
+                    <a href="manage_albums.html" onclick="manage_albums(14, 'Hospitalizations And Surgeries');" class="link icon-only unhide-ru center-button btn_style" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Управление изображениями</a>
+                    <a href="manage_albums.html" onclick="manage_albums(14, 'Hospitalizations And Surgeries');" class="link icon-only unhide-fr center-button btn_style" style="color:white;display: none"><i class="fa fa-file-image-o"></i>Gérer les images</a>
+                    <a href="manage_albums.html" onclick="manage_albums(14, 'Hospitalizations And Surgeries');" class="link icon-only unhide-ar btn_style" style="color:white;display: none;text-align: center;"><i class="fa fa-file-image-o"></i>إدارة الصور</a>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,55 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white  translation-init" style="" data-i18n="grant_access.title"></div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="grantaccesInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through" >
+    <div data-page="grant_access" class="page">
+        <div class="content-block-title  translation-init" style="padding-top: 64px;font-size:20px;" data-i18n="grant_access.invite"></div>
+        <div class="list-block" >
+            <ul style="background-color:#FFFFFF" class="arabic">
+                <li>
+                    <div class="item-content">
+                        <div class="item-media"></div>
+                        <div class="item-inner translation-init">
+                            <div class="item-title label " style="" data-i18n="grant_access.email"></div>
+                            <div class="item-input">
+                                <input type="text" class="" style="" data-i18n="[placeholder]grant_access.email" name="Email_gacess" id="Email_gacess" placeholder="" />
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media"></div>
+                        <div class="item-inner translation-init">
+                            <div class="item-title label " style="" data-i18n="grant_access.type"></div>
+                            <div class="item-input">
+                                <select name="gac_role_select" class="" style="" id="gac_role_select">
+                                    <option value="Admin" data-i18n="grant_access.admin"></option>
+                                    <option value="Data Entry" data-i18n="grant_access.data_entry"></option>
+                                    <option value="Read Only" data-i18n="grant_access.readonly"></option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="GrandAccessSubmit();" style="color:white;;text-align: center" data-i18n="general.save"></a>
+            </div>
+        </div>
+    </div>
+</div>

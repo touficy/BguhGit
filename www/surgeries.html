@@ -1,0 +1,189 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="" class="center sliding white  translation-init" data-i18n="surgeries.title"></div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="surgeriesFormInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through" >
+    <div data-page="surgeries" class="page"  >
+        <div style="overflow-y:scroll; height:inherit">
+            <div style="" class="content-block-title  translation-init" data-i18n="surgeries.description" style="font-size:17px;margin-top: 4%;";marg></div>
+            <div class="list-block" style="margin-bottom:70px; margin-top: 36px;">
+                <ul style="background-color:#FFFFFF" class="arabic">
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.admission_date"></div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.admission_date" class="" name="sur_add_date" id="sur_add_date" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.charge_date"></div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.charge_date" class="" name="sur_dis_date" id="sur_dis_date" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.case"></div>
+                                <div class="item-input">
+                                    <input type="tel" style="" data-i18n="[placeholder]surgeries.case" class="" name="sur_caseno" id="sur_caseno" placeholder="" >
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.physician"></div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.physician" class="" name="sur_physician" id="sur_physician" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.Reason">Reason</div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.Reason" class="" name="sur_reason" id="sur_reason" placeholder="" >
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.Hospital">Hospital</div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.Hospital" class="" name="sur_hospital" id="sur_hospital" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div style="" class="item-title label " data-i18n="surgeries.Address">Address</div>
+                                <div class="item-input translation-init">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.Address" class="" name="sur_address" id="sur_address" placeholder="" >
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div style="" class="item-title label " data-i18n="surgeries.Diagnosis">Diagnosis</div>
+                                <div class="item-input translation-init">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.Diagnosis" class="" name="sur_diag" id="sur_diag" placeholder=" ">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.Procedure"></div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.Procedure" class="" name="sur_procedure" id="sur_procedure" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.Pathology"></div>
+                                <div class="item-input">
+                                    <input type="text" style="" data-i18n="[placeholder]surgeries.Pathology" class="" name="sur_pathology" id="sur_pathology" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div style="" class="item-title label " data-i18n="surgeries.findings"></div>
+                                <div class="item-input">
+                                    <!-- <input type="text" name="sur_important_findings" id="sur_important_findings" placeholder="Important Findings   "> -->
+                                    <textarea id="sur_important_findings" name="sur_important_findings"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div data-role="content">
+                            <form method="post" onsubmit="return uploadSurgeriesUploadPic()" id="file-attachment-form5"  enctype="multipart/form-data">
+                                <div data-role="fieldcontain" class="field">
+                                    <div class="fileupload fileupload-new" data-provides="fileupload" style="overflow:hidden">
+                                        <div class="fileupload-preview fileupload-exists thumbnail" id="surgeries_img_display" style="max-width: 200px; max-height: 200px;  line-height: 20px;margin-right: 28%;"></div>
+                                        <div style="text-align: center">
+                                            <span class="btn btn-file">
+                                                <span style="" class="fileupload-new  translation-init" data-i18n="general.image"></span>
+                                                <span class="fileupload-exists"></span>
+                                                <div class="image-upload">
+                                                    <label for="sur_upload_image">
+                                                        <i class="fa fa-upload fa-2x" style=" color: #000;font-size: 40px;height:50px;"></i>
+                                                        <!-- <span align="center" style="color:#000;font-size:13px;display:block;">Upload Image</span> -->
+                                                    </label>
+                                                    <input type="file" name="sur_upload_image" id="sur_upload_image" />
+                                                </div>
+                                            </span>
+                                            <a href="#" style="margin-top: 10px;width: 200px;" class="button button-round " id="surgeriesRemovehide" onclick="removeSurgeriesImage();" data-i18n="general.remove"></a>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="sur_upload_image_id" id="sur_upload_image_id"/>
+                                    <input type="hidden" name="userids" id="userids"/>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <input type="hidden" name="surgeries_id" id="surgeries_id" placeholder="Oxygen Saturation : ">
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="surgeries_inbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only " onclick="surgeriesSubmit();" style="color:white;border-right:1px white solid;;text-align: center" data-i18n="general.update"></a>
+                <a href="#" onclick="deleteSurgeries();" class="link icon-only " style="color:white;;text-align: center" data-i18n="general.delete"></a>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="surgeries_upbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only " onclick="surgeriesSubmit();" style="color:white;border-right:1px white solid;;text-align: center" data-i18n="general.submit"></a>
+                <a href="surgeries_listing.html" class="link icon-only " style="color:white;;text-align: center" data-i18n="general.cancel"></a>
+            </div>
+        </div>
+    </div>
+</div>

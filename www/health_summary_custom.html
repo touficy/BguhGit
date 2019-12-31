@@ -1,0 +1,62 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding unhide-en" style="display: none">Custom Summary</div>
+        <div class="center sliding unhide-sp" style="display: none">Resumen personalizado</div>
+        <div class="center sliding unhide-ru" style="display: none">Пользовательское резюме</div>
+        <div class="center sliding unhide-fr" style="display: none">Résumé personnalisé</div>
+        <div class="center sliding unhide-ar" style="display: none">ملخص مخصص</div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="customhealthsummaryInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages">
+    <div data-page="health_summary_custom" class="page">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="list-block" style="margin-bottom: 70px;">
+                <ul style="background-color:#FFFFFF;margin-top: 50px;" id="Chealthsections" class="arabic">
+                    <li>
+                        <label class="label-checkbox item-content">
+                            <input type="checkbox" name="my-checkbox" value="Books" onchange="if (this.checked) {
+                                        $('.checkboxcheckall').prop('checked', true);
+                                    } else {
+                                        $('.checkboxcheckall').prop('checked', false);
+                                    }">
+                            <div class="item-media">
+                                <i class="icon icon-form-checkbox"></i>
+                            </div>
+                            <div class="item-inner">
+                                <div class="item-title unhide-en" style="display: none">CHECK ALL</div>
+                                <div class="item-title unhide-sp" style="display: none">COMPRUEBE TODO</div>
+                                <div class="item-title unhide-ru" style="display: none">ОТМЕТИТЬ ВСЕ</div>
+                                <div class="item-title unhide-fr" style="display: none">VÉRIFIE TOUT</div>
+                                <div class="item-title unhide-ar" style="display: none">حدد الكل</div>
+                            </div>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9; height: 59px;">
+            <div class="toolbar-inner" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only unhide-en" style="color:white;border-right:1px white solid;display: none;text-align: center" onclick="exporttoPDF();">EXPORT TO PDF</a>
+                <a href="#" class="link icon-only unhide-sp" style="color:white;border-right:1px white solid;display: none;text-align: center" onclick="exporttoPDF();">EXPORTAR A PDF</a>
+                <a href="#" class="link icon-only unhide-ru" style="color:white;border-right:1px white solid;display: none;text-align: center" onclick="exporttoPDF();">ЭКСПОРТ В PDF</a>
+                <a href="#" class="link icon-only unhide-fr" style="color:white;border-right:1px white solid;display: none;text-align: center" onclick="exporttoPDF();">EXPORTATION AU PDF</a>
+                <a href="#" class="link icon-only unhide-ar btn_style" style="color:white;border-right:1px white solid;display: none;text-align: center" onclick="exporttoPDF();">PDFتصدير إلى </a>
+                <a href="health_summary_detaild.html" onclick="getDetailedSUmmary();" class="link icon-only unhide-en" style="color:white;display: none;text-align: center">PRINT</a>
+                <a href="health_summary_detaild.html" onclick="getDetailedSUmmary();" class="link icon-only unhide-sp" style="color:white;display: none;text-align: center">IMPRESIÓN</a>
+                <a href="health_summary_detaild.html" onclick="getDetailedSUmmary();" class="link icon-only unhide-ru" style="color:white;display: none;text-align: center">РАСПЕЧАТАТЬ</a>
+                <a href="health_summary_detaild.html" onclick="getDetailedSUmmary();" class="link icon-only unhide-fr" style="color:white;display: none;text-align: center">IMPRESSION</a>
+                <a href="health_summary_detaild.html" onclick="getDetailedSUmmary();" class="link icon-only unhide-ar btn_style" style="color:white;display: none;text-align: center">أطبع
+                    </a>
+            </div>
+        </div>
+    </div>
+</div>

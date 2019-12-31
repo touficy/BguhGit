@@ -1,0 +1,11 @@
+.unhide-jp{
+    display:block !important;
+}
+
+.unhide-jp-inline{
+    display:inline !important;
+}
+
+.unhide-jp-table-cell{
+    display:table-cell !important;
+}

@@ -1,0 +1,50 @@
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white">
+            <span class="unhide-en" style="display: none">Physicians & Therapists</span>
+            <span class="unhide-sp" style="display: none">Médicos y terapeutas</span>
+            <span class="unhide-ru" style="display: none">Врачи и терапевты</span>
+            <span class="unhide-fr" style="display: none">Médecins et thérapeutes</span>
+            <span class="unhide-ar" style="display: none">الأطباء والمعالجين</span>
+        </div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="healthproviderListingTips()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="health_provider_listing" class="page">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="list-block" style="padding-top:59px;">
+                <div id="healthproviders">
+                </div>
+
+
+                <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9; height: 59px;">
+                    <div class="toolbar-inner" style="background:#4d7ab9;">
+                        <a href="health_providers.html" class="link icon-only" style="color:white;border-right:1px white solid " onclick="HealthProvidersAdd();"><i class="fa fa-plus-circle"></i>
+	<span class="unhide-en" style="display: none">Add New</span>
+	<span class="unhide-sp" style="display: none">Agregar nuevo</span>
+	<span class="unhide-ru" style="display: none">Добавить новое</span>
+	<span class="unhide-fr" style="display: none">Ajouter un nouveau</span>
+	<span class="unhide-ar" style="display: none">اضف جديد</span>
+	</a>
+                        <a href="manage_albums.html" onclick="manage_albums(45,'Physician Provider');" class="link icon-only" style="color:white"><i class="fa fa-file-image-o"></i>
+	<span class="unhide-en" style="display: none">Manage Images</span>
+	<span class="unhide-sp" style="display: none">Administrar imágenes</span>
+	<span class="unhide-ru" style="display: none">Управление изображениями</span>
+	<span class="unhide-fr" style="display: none">Gérer les images</span>
+	<span class="unhide-ar" style="display: none">إدارة الصور</span>
+	</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

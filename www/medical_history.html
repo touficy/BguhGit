@@ -1,0 +1,123 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="index.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div style="" class="center sliding white  translation-init" data-i18n="medical_history.title"></div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="MedicalhistoryformInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through" >
+    <div data-page="medical_history" class="page translation-init">
+        <div style="overflow-y:scroll; height:inherit;">
+            <div class="content-block-title " style="font-size:17px;;margin-top: 4%;" data-i18n="medical_history.description"></div>
+            <div class="list-block" style="margin-bottom:70px;margin-top: 33px;">
+                <ul style="background-color:#FFFFFF" class="arabic">
+                    <input type="hidden" id="rowIdFH10" value="0" />
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div style="" class="item-title label " data-i18n="medical_history.name"></div>
+                                <div class="item-input" id="addselectdieases_0">
+                                    <input type="text" class="" data-i18n="[placeholder]medical_history.name" style="" name="medi_his_name" placeholder="" id="medi_his_name_0"/>
+                                    <input type="hidden" id="medi_his_name_id_0"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li id="medi_his_name_others_li_0" style="display:none;">
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div style="" class="item-title label " data-i18n="medical_history.others"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]medical_history.others" name="medi_his_name_others" placeholder="" id="medi_his_name_others_0"/>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input">
+                                    <label class="label-checkbox item-content">
+                                        <!-- Checked by default -->
+                                        <input type="checkbox" name="medi_sactive" id="medi_sactive_0"   value="1" onClick="getResults3(this)" >
+                                        <div class="item-media">
+                                            <i class="icon icon-form-checkbox"></i>
+                                        </div>
+                                        <div class="item-inner">
+                                            <div style="" class="item-title " data-i18n="medical_history.active"></div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div style="" class="item-title label " data-i18n="medical_history.start_date"></div>
+                                <div class="item-input">
+                                    <input style="" class="" data-i18n="[placeholder]medical_history.start_date" type="text" name="medi_sdate" id="medi_sdate_0" placeholder="" >
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content text3" >
+                            <div class="item-media"></div>
+                            <div class="item-inner" id="dvPassport">
+                                <div style="" class="item-title label   translation-init" data-i18n="medical_history.resolved_date"></div>
+                                <div class="item-input">
+                                    <input style="" class="  translation-init" data-i18n="[placeholder]medical_history.resolved_date" type="text" name="medi_rdate" id="medi_rdate_0" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="" class="item-title label translation-init " data-i18n="medical_history.description_word"></div>
+                    </li>
+                    <li>
+                        <div class="item-content" >
+                            <div class="item-media"></div>
+                            <div class="item-inner ">
+
+                                <div class="item-input" >
+                                    <!-- <input type="text" name="medi_descr" id="medi_descr_0" placeholder="Description"> -->
+                                    <textarea id="medi_descr_0" class=" translation-init" data-i18n="[placeholder]medical_history.description_word" placeholder="" name="medi_descr" style="height: 140px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span id="responce20"></span>
+                <!-- <input type="button" value=' AddMore '  name="medi_add" id='medi_add' onClick="addFieldsmedihis()" style="float:right"><i class="fa fa-plus-circle fa-2x"></i> -->
+                <button name="medi_add" id='medi_add' onClick="addFieldsmedihis()" style="float:right;border:none;background:none;"><i class="fa fa-plus-circle fa-2x"></i>
+                </button>
+                <input style="" class="" type="hidden" name="update_medi_sdate" id="update_medi_sdate" placeholder="Start Date">
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="medihistory_inbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only " data-i18n="general.update" onclick="medicalhistorySubmit();" style="color:white;border-right:1px white solid;"></a>
+                <a href="#" onclick="deleteMediHistory();" data-i18n="general.delete" class="link icon-only " style="color:white;"></a>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="medihistory_upbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only " data-i18n="general.submit" onclick="medicalhistorySubmit();" style="color:white;border-right:1px white solid;"></a>
+                <a href="medical_history_condi_listing.html" class="link icon-only " data-i18n="general.cancel" style="color:white;"></a>
+            </div>
+        </div>
+    </div>
+</div>

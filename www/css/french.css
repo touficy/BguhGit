@@ -1,0 +1,11 @@
+.unhide-fr{
+    display:block !important;
+}
+
+.unhide-fr-inline{
+    display:inline !important;
+}
+
+.unhide-fr-table-cell{
+    display:table-cell !important;
+}

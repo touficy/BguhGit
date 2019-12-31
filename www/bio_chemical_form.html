@@ -1,0 +1,278 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white translation-init" style="" data-i18n="bio_chemical_form.title"></div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="biochemicalFormInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="bio_chemical_form" class="page" >
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="content-block-title translation-init" style="padding-top: 64px;font-size:18px;" data-i18n="bio_chemical_form.description"></div>
+
+            <div class="list-block" style="margin-bottom: 70px;margin-left: 0;">
+                <ul style="background-color:#FFFFFF" class="arabic">
+                    <div id="showUr" style="border-bottom: 2px solid ">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.height_feet"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-input">
+                                        <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.height_feet" name="bio_che_height" id="bio_che_height" placeholder="" onkeyup="autocalbioBmi_U()">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.title_inches"></div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-input">
+                                        <input type="tel" class="" data-i18n="[placeholder]bio_chemical_form.title_inches" style="" name="bio_che_height_i" id="bio_che_height_i" placeholder="" onkeyup="autocalbioBmi_U()">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.weight_pounds"></div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner">
+                                    <div class="item-input translation-init">
+                                        <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.weight_pounds" name="bio_che_Weight_p" id="bio_che_Weight_p" placeholder="" onkeyup="autocalbioBmi_U()">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <div id="showEUROP12" style="border-bottom: 2px solid ">
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.height_cms"></div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner">
+                                    <div class="item-input translation-init">
+                                        <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.height_cms" name="bio_che_height_cm" id="bio_che_height_cm" placeholder="" onkeyup="autocalbioBMI_E()">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner translation-init">
+                                    <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.weight_kg">Weight (Kg)</div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-media"></div>
+                                <div class="item-inner">
+                                    <div class="item-input translation-init">
+                                        <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.weight_kg" name="bio_che_Weight_kg" id="bio_che_Weight_kg" placeholder="" onkeyup="autocalbioBMI_E()">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </div>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.bmi"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.bmi" name="bio_che_BMI" id="bio_che_BMI" placeholder="" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.Waist"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.Waist" name="bio_che_wc" id="bio_che_wc" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.Systolic"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" data-i18n="[placeholder]bio_chemical_form.Systolic" style="" name="bio_che_bp" id="bio_che_bp" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.Diastolic"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.Diastolic" name="bio_che_Pulse" id="bio_che_Pulse" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.Metabolic"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" style="" data-i18n="[placeholder]bio_chemical_form.Metabolic" name="bio_che_rmr" id="bio_che_rmr" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" style="width:100%;" data-i18n="bio_chemical_form.Calorimetry">Calorimetry Predictive Equation</div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" data-i18n="[placeholder]bio_chemical_form.Calorimetry" style="" name="bio_che_cpe" id="bio_che_cpe" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label" data-i18n="bio_chemical_form.Expenditure" style="width:100%;"></div>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner">
+                                <div class="item-input translation-init">
+                                    <input type="tel" class="" data-i18n="[placeholder]bio_chemical_form.Expenditure" style="" name="bio_che_TEE" id="bio_che_TEE" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <input type="hidden" name="bio_update" id="bio_update" placeholder="id ">
+            </div>
+        </div>
+        <!-- <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+<div class="toolbar-inner" style="background:#4d7ab9;">
+      <a href="#" onclick="biochemicalDataSubmit();" class="link icon-only" style="color:white;border-right:1px white solid ">Submit</a>
+      <a href="loginnormal.html"  class="link icon-only" style="color:white">Cancel</a>
+         </div>
+</div>  	 -->
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="biochemical_inbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only" onclick="biochemicalDataSubmit();" style="color:white;border-right:1px white solid;;text-align: center" data-i18n="general.update"></a>
+                <a href="#" onclick="deleteBioChemical();" class="link icon-only" style="color:white;;text-align: center" data-i18n="general.delete"></a>
+            </div>
+        </div>  
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="biochemical_upbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;" >
+                <a href="#" class="link icon-only" onclick="biochemicalDataSubmit();" style="color:white;border-right:1px white solid;;text-align: center" data-i18n="general.submit"></a>
+                <a href="loginnormal.html" class="link icon-only" style="color:white;;text-align: center" data-i18n="general.cancel"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,59 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a>
+        </div>
+        <div style="" class="center sliding white  translation-init" data-i18n="self_moni_listing_new.title" ></div>
+        <div class="right theme-white searchicon" >
+            <a href="#" onclick="MobileAppInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i>
+            </a>
+        </div>
+        <div class="right theme-white navicon" >
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="self_moni_listing_new" class="page" >
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="page-content">
+                <div class="content-block">
+                    <div class="buttons-row  translation-init">
+                        <a style="" href="#tab1" class="tab-link active button " data-i18n="self_moni_listing_new.by_test"></a>
+                        <a style="" href="#tab2"  class="tab-link button " onclick="getSelfData();"data-i18n="self_moni_listing_new.by_date"></a>
+                    </div>
+                </div>
+                <div class="tabs arabic">
+                    <div id="tab1" class="tab active" >
+                        <div class="list-block" style="margin-bottom:130px;">
+                            <ul id="self_listpage_data">
+                                <!-- <div id="self_others"> </div> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Tab 2 -->
+                    <div id="tab2" class="tab" >
+                        <div class="list-block" style="margin-bottom:130px;">
+                            <ul id="getallselfmonitoringchart">
+
+                                <!-- <div id="self_others"> </div> -->
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9;bottom: 60px; height: 59px;">
+            <div class="toolbar-inner" style="background:#4d7ab9;" id="selfrep"></div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#4d7ab9; height: 59px;">
+            <div class="toolbar-inner  translation-init" style="background:#4d7ab9;">
+                <a href="self_monitoring_charts.html" onclick="selfMonitoringAdd();" class="link icon-only " style="color:white;border-right:1px white solid;;text-align: center;"><i style="margin-right: 8px;" class="fa fa-plus-circle "data-i18n="general.add_new"></i></a>
+                <a href="manage_albums.html" onclick="manage_albums(44, 'Self Monitoring Charts');" class="link icon-only " style="color:white;;text-align: center;"><i style="margin-right: 8px;" class="fa fa-file-image-o"data-i18n="general.manage_images"></i></a>
+            </div>
+        </div>
+    </div>
+</div>

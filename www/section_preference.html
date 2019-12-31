@@ -1,0 +1,43 @@
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left sliding">
+      <a href="loginnormal.html" class="back link">
+        <i class="fa fa-arrow-left" style="font-size: 24px;"></i>
+      </a>
+    </div>
+    <div class="center sliding white translation-init" data-i18n="general.sec_pref" style="width:inherit!important"></div>
+    <div class="right theme-white navicon">
+      <a href="#" onclick="sectionpreferenceInfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+      <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="pages navbar-through">
+  <div data-page="section_preference" class="page">
+    <div style="overflow-y:scroll; height:inherit">
+      <div class="content-block-title" style="padding-top: 31px;font-size:18px;"></div>
+      <div class="list-block" style="margin-bottom: 50px;">
+        <form id="section_pre_form">
+          <ul style="background-color:#FFFFFF;color:black;" id="sections_pref" class="arabic">
+          </ul>
+        </form>
+      </div>
+    </div>
+    <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+      <div class="toolbar-inner" style="background:#4d7ab9;">
+        <a href="#" class="link icon-only unhide-en" style="    padding: 15px 0;color:white;border-right:1px white solid;display: none;text-align: center" onclick="UpdateSectionsPre();">Update</a>
+        <a href="#" class="link icon-only unhide-sp" style="    padding: 15px 0;color:white;border-right:1px white solid;display: none;text-align: center" onclick="UpdateSectionsPre();">Actualizar</a>
+        <a href="#" class="link icon-only unhide-ru" style="    padding: 15px 0;color:white;border-right:1px white solid;display: none;text-align: center" onclick="UpdateSectionsPre();">Обновить</a>
+        <a href="#" class="link icon-only unhide-fr" style="    padding: 15px 0;color:white;border-right:1px white solid;display: none;text-align: center" onclick="UpdateSectionsPre();">Mettre à jour</a>
+        <a href="#" class="link icon-only unhide-ar " style="    padding: 15px 0;color:white;border-right:1px white solid;display: none;text-align: center;padding-top: 4%;" onclick="UpdateSectionsPre();">تعديل</a>
+        <a href="loginnormal.html" onclick="getHomepageSections();" class="link icon-only unhide-en" style="    padding: 15px 0;color:white;display: none;text-align: center">Cancel</a>
+        <a href="loginnormal.html" onclick="getHomepageSections();" class="link icon-only unhide-sp" style="    padding: 15px 0;color:white;display: none;text-align: center">Cancelar</a>
+        <a href="loginnormal.html" onclick="getHomepageSections();" class="link icon-only unhide-ru" style="    padding: 15px 0;color:white;display: none;text-align: center">Отмена</a>
+        <a href="loginnormal.html" onclick="getHomepageSections();" class="link icon-only unhide-fr" style="    padding: 15px 0;color:white;display: none;text-align: center">Annuler</a>
+        <a href="loginnormal.html" onclick="getHomepageSections();" class="link icon-only unhide-ar " style="    padding: 15px 0;color:white;display: none;text-align: center;padding-top: 4%;">إلغاء</a>
+      </div>
+    </div>
+  </div>
+</div>

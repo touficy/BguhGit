@@ -1,0 +1,102 @@
+<script src="js/translation.init.js"></script>
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left sliding"><a href="loginnormal.html" class="back link"><i class="fa fa-arrow-left" style="font-size: 24px;"></i></a></div>
+        <div class="center sliding white translation-init " style="" data-i18n="implants_medicaldevices.title"></div>
+        <div class="right theme-white searchicon">
+            <a href="#" onclick="implantdeviceforminfo()" class="link icon-only"><i class="fa fa-info-circle" style="font-size:20px"></i></a>
+        </div>
+        <div class="right theme-white navicon">
+            <a href="#" data-panel="right" class="link icon-only open-panel"> <i class="fa fa-bars" style="font-size:24px"></i>
+        </a>
+        </div>
+    </div>
+</div>
+
+<div class="pages navbar-through">
+    <div data-page="implants_medicaldevices_listing" class="page arabic">
+        <div style="overflow-y:scroll; height:inherit">
+            <div class="content-block-title translation-init " style="padding-top: 64px;font-size:18px;" data-i18n="implants_medicaldevices.description"></div>
+
+            <div class="list-block" style="margin-bottom: 70px;">
+                <ul style="background-color:#FFFFFF">
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="implants_medicaldevices.Physician"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]implants_medicaldevices.Physician" name="implants_meddevices_physician" id="implants_meddevices_physician" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="implants_medicaldevices.Hospital"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]implants_medicaldevices.Hospital" name="implants_meddevices_hospital" id="implants_meddevices_hospital" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="implants_medicaldevices.Date"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]implants_medicaldevices.Date" name="implants_meddevices_date" id="implants_meddevices_date" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="implants_medicaldevices.Type"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]implants_medicaldevices.Type" name="implants_meddevices_type" id="implants_meddevices_type" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-media"></div>
+                            <div class="item-inner translation-init">
+                                <div class="item-title label " style="" data-i18n="implants_medicaldevices.Reason"></div>
+                                <div class="item-input">
+                                    <input type="text" class="" style="" data-i18n="[placeholder]implants_medicaldevices.Reason" name="implants_meddevices_reason" id="implants_meddevices_reason" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <input type="hidden" name="update_implants_id" id="update_implants_id" placeholder="id">
+            </div>
+        </div>
+        <!-- <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;">
+    		<div class="toolbar-inner" style="background:#4d7ab9;">
+		      <a href="#" onclick="implantsdataSubmit();" class="link icon-only" style="color:white;border-right:1px white solid ">Submit</a>
+		      <a href="loginnormal.html"  class="link icon-only" style="color:white">Cancel</a>
+   			 </div>
+  		</div>   -->
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="implants_inbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="implantsdataSubmit();" style="color:white;border-right:1px white solid;" data-i18n="general.update"></a>
+                <a href="#" onclick="deleteImplantsAndMedicalDevices();" class="link icon-only " style="color:white;" data-i18n="general.delete"></a>
+            </div>
+        </div>
+        <div class="toolbar tabbar" style="position:absolute;background:#173a62; height: 59px;" id="implants_upbtn">
+            <div class="toolbar-inner translation-init" style="background:#4d7ab9;">
+                <a href="#" class="link icon-only " onclick="implantsdataSubmit();" style="color:white;border-right:1px white solid;" data-i18n="general.submit"></a>
+                <a href="loginnormal.html" class="link icon-only " style="color:white;" data-i18n="general.cancel"></a>
+            </div>
+        </div>
+    </div>
+</div>

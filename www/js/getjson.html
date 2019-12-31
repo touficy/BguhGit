@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Page Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        var url= "http://www.healthrecordspro.com/ws.php?type=moveallmediaalbums&format=json&customerid=103";
+        
+		$.getJSON (url, function (json) {
+          
+            var name = "0";
+            var tempname = "";
+            $.each( json['posts'], function( key,value ) {
+
+                name = json['posts'][key].name;
+                if(name!=tempname){
+                    
+                    $("#albms").append("<b>"+name+"</b>")
+                    $("#albms").append("<p>"+json['posts'][key].title+"</p>")
+                }
+                else{
+                    $("#albms").append("<p id = "+json['posts'][key].id+">"+json['posts'][key].title+"</p>");
+                }
+                tempname = json['posts'][key].name;
+                });
+            
+            });
+    </script>
+</head>
+
+<body>
+<div>
+    <div id="albms">
+        
+    </div>
+</div>
+
+
+</body>
+</html>
