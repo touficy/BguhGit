@@ -10,7 +10,7 @@
         "cordova-plugin-media-capture": "2.0.0",
         "cordova-plugin-file": "5.0.0",
         "cordova-plugin-file-transfer": "1.7.0",
-        "cordova-plugin-inappbrowser": "2.0.1",
+        "cordova-plugin-inappbrowser": "3.1.0",
         "cordova-plugin-media": "4.0.0",
         "cordova-plugin-dialogs": "file:plugins/cordova-plugin-dialogs",
         "br.com.brunogrossi.MediaScannerPlugin": "file:plugins/br.com.brunogrossi.MediaScannerPlugin",
